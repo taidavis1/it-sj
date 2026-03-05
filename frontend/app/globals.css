@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@property --border-angle {
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+
+@theme inline {
+
+    --color-main: #0B1F3B;
+    --color-second: #0066FF;
+    --color-third: #00B3FF;
+    --color-dark: #1A1A1A;
+    --color-lightGray: #F5F7FA;
+    
+
+    /* Navbar: Sora 500 ;  Button Sora 600 */
+
+    --font-headerFont: var(--font-sora);
+    --font-txtFont: var(--font-inter);
+
+    --animate-typing: typing 2s steps(55) infinite alternate, blink .7s infinite;
+    --animate-blinking: blink .7s infinite;
+    --animate-spin: spin 2s linear infinite;
+    --animate-bounce: bounce 0.5s linear infinite;
+    --animate-zoom: zoom 8s infinite alternate ease-in-out;
+    --animate-border-rotate: border-rotate 3s linear infinite;
+
+    --radius-about-img-1: 28% 72% 44% 56% / 30% 24% 76% 70%;
+    --radius-about-img-1-1: 0% 100% 1% 99% / 99% 100% 0% 1%;
+    --radius-about-img-2: 100% 0% 1% 99% / 0% 100% 0% 100%;
+    --radius-about-img-2-1: 100% 0% 100% 0% / 0% 0% 100% 100%;
+    --radius-services-img-1: 36% 64% 64% 36% / 66% 52% 48% 34%;
+    --radius-faq-section-1: 52% 48% 70% 30% / 52% 65% 35% 48%;
+
+    @keyframes typing {
+        0% { width: 0%; }
+        100% { width: 100%; }
+    }
+    @keyframes blink {
+        50% { border-color: transparent; }
+    }
+    @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+    @keyframes bounce {
+        0%, 100% {
+            transform: translateY(-5%);
+            animation-timing-function: cubic-bezier(0.8,0,1,1);
+        }
+        50% {
+            transform: translateY(0);
+            animation-timing-function: cubic-bezier(0,0,0.2,1);
+        }
+    }
+    @keyframes zoom {
+        0% { transform: scale(1); }
+        100% { transform: scale(1.1); }
+    }
+}
+
+@theme {
+    --animate-rotate-border: border-rotate 5s linear infinite;
+    @keyframes border-rotate {
+        to {
+        --border-angle: 360deg;
+        }
+    }
+}
+
+@utility list-checkMark {
+    list-style-type: "âœ“ ";
+}
+
+@utility polygon2 {
+    clip-path: polygon(0 0, 100% 0, 100% 81%, 0 100%);
+}
+/* ++++++++++++++++++++++++++++++++++++++++++ */
+
+.img-test{
+    border-image: fill 0 linear-gradient(#00000000, #0B1F3B);
+}
+
+.img-test2{
+    border-radius: 1rem;
+    background: linear-gradient(rgba(255, 255, 255, 0), #163A5F);
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.img-test3{
+    background: linear-gradient(#00000000, #163A5F);
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.t-underline {
+    border-bottom-width: 0;
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#dcd7d831, white);
+    background-size: 0 2px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size .5s ease-in-out;
+}
+
+.t-underline:hover {
+    background-size: 100% 2px;
+}
