@@ -78,7 +78,7 @@ export const Navbar = () => {
                 <div className=' grid grid-cols-2 lg:grid-cols-3 items-center'>
                     <Image className={`w-24 h-24 mx-16 my-4`} src={Logo} alt='It-sj group Logo' />
                     <div className='bg-main/60 backdrop-blur-lg rounded-full'>
-                        <div className=' flex items-center text-white font-headerFont font-[500px] tracking-[0.5px] space-x-8 mx-10'>
+                        <div className=' flex justify-center items-center text-white font-headerFont font-[500px] tracking-[0.5px] space-x-12'>
                             {NavData.map((item, index) => (
                                 item?.subMenu ?
                                     <div className='relative' key={index} onMouseEnter={() => handleHover(index)} onMouseLeave={() => handleHover(index)}>

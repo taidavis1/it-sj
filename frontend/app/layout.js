@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
 				className={`${fontSora.variable} ${fontInter.variable}`}
 			>
 				<StoreProvider>
-					<main className=" font-txtFont scroll-smooth">
+					<main className=" font-txtFont scroll-smooth overflow-hidden">
 						<Navbar />
 						{children}
 					</main>

@@ -108,3 +108,7 @@
 .t-underline:hover {
     background-size: 100% 2px;
 }
+
+.swiper {
+  padding-bottom: 20px; 
+}

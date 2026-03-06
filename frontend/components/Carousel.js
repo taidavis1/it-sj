@@ -16,6 +16,8 @@ import Icon2 from "@/public/Icon/2.png";
 import Icon3 from "@/public/Icon/3.png";
 import Icon4 from "@/public/Icon/4.png";
 
+import CircuitL from "@/public/Icon/alt/circuitL.png";
+
 import {motion} from "motion/react";
 
 import 'swiper/css';
@@ -131,6 +133,7 @@ export const Carousel = () => {
                 >
                 </path>
             </svg>
+            <Image alt='ItSJ-G Circuit Icon Image' src={CircuitL} className=' absolute w-[400px] translate-y-4 translate-x-8 -left-24' />
         </div>
     )
 }
