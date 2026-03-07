@@ -8,7 +8,25 @@ import IndustryList from "@/components/IndustryList";
 import ServicesData from "@/components/ServicesData";
 import SwiperData from "@/components/SwiperData";
 
+import WhyIcon1 from "@/public/Icon/WhyIcon/1.png";
+import WhyIcon2 from "@/public/Icon/WhyIcon/2.png";
+import WhyIcon3 from "@/public/Icon/WhyIcon/3.png";
+import WhyIcon4 from "@/public/Icon/WhyIcon/4.png";
+
+import BG1 from "@/public/Background/1.png";
+import BG2 from "@/public/Background/2.png";
+import BG3 from "@/public/Background/3.png";
+import BG4 from "@/public/Background/4.png";
+
+
 export default function HomePage() {
+
+	const LastData = [
+		{name: "Precision PCB Manufacturing", desc: "High-precision PCB fabrication and assembly in San Jose designed for advanced electronics used across Silicon Valley industries including robotics, aerospace, and semiconductor technology.", img: BG1},
+		{name: "Fast PCB Prototyping", desc: "Rapid PCB prototyping services helping Silicon Valley startups and Bay Area engineers move quickly from design concepts to functional circuit boards.", img: BG2},
+		{name: "Built for Silicon Valley Innovation", desc: "Based in San Jose, we support Bay Area technology companies with reliable PCB manufacturing solutions for robotics, medical devices, EV technology, and semiconductor systems.", img: BG3},
+		{name: "End-to-End Electronics Solutions", desc: "From PCB fabrication and assembly to embedded software development, we deliver complete electronics solutions that help engineers turn ideas into production-ready products.", img: BG4},
+	]
     return (
 		<div>
 			<Carousel />
@@ -97,7 +115,7 @@ export default function HomePage() {
 			</section>
 
 			<section className=" -translate-y-8 bg-[url('/servicesBG.png')] bg-cover bg-center bg-no-repeat">
-				<div className="pb-8 lg:pb-12 px-2 pt-14 lg:pt-14 lg:px-0 mx-auto max-w-7xl">
+				<div className="pb-8 lg:pb-14 px-2 pt-14 lg:pt-14 lg:px-0 mx-auto max-w-7xl">
 					<div className=" space-y-12 flex flex-col items-center">
 						<div className="bg-linear-to-r flex items-center justify-center space-x-[4px] text-white text-center from-[#007ec7] to-[#000d68] py-4 shadow-xl rounded-full w-[168px]">
 							<Image src={IndustryIcon} className=" brightness-0 invert w-6 h-6" alt="ItSJ-G Industry Icon" />
@@ -128,6 +146,101 @@ export default function HomePage() {
 				</div>
 			</section>
 
+			<section className="bg-lightGray">
+				<div className="pb-8 lg:pb-24 px-2 pt-14 lg:pt-28 lg:px-0 mx-auto max-w-7xl">
+					<div className=" flex justify-center">
+						<div className="bg-linear-to-r flex items-center justify-center space-x-[4px] text-white text-center from-[#007ec7] to-[#000d68] py-4 shadow-xl rounded-full w-[200px]">
+							<Image src={IndustryIcon} className=" brightness-0 invert w-6 h-6" alt="ItSJ-G Industry Icon" />
+							<span className=" text-base">
+								Why Choose Us
+							</span>
+						</div>
+					</div>
+					<div className=" lg:flex-row flex-col flex items-center lg:gap-x-24 mt-20">
+						<div className=" w-full flex flex-col">
+							<div className=" flex space-x-2 font-bold font-headerFont lg:text-5xl  items-center">
+								<span className="text-main">
+									The ITSJ-G
+								</span>
+								<span className=" text-clip text-transparent bg-linear-to-r to-[#007ec7] from-[#000d68] bg-clip-text">
+									Difference.
+								</span>
+							</div>
+							<div className=" mt-20">
+								<Image src={WhyIcon1} alt="ItSJ-G Why Choose Us Icon" className=" -translate-x-8 w-32 h-28" />
+								<div className="">
+									<h3 className=" border-b py-4 text-2xl font-headerFont font-bold text-main uppercase">
+										Precision Engineering
+									</h3>
+								</div>
+								<p className="mt-6 text-lg">
+									We deliver high-precision PCB fabrication and assembly in San Jose, ensuring every board meets strict quality and performance standards for advanced electronics.
+								</p>
+							</div>
+							<div className=" mt-12">
+								<Image src={WhyIcon2} alt="ItSJ-G Why Choose Us Icon" className=" -translate-x-8 w-32 h-28" />
+								<div className="">
+									<h3 className=" border-b py-4 text-2xl font-headerFont font-bold text-main uppercase">
+										Reliable Manufacturing
+									</h3>
+								</div>
+								<p className="mt-6 text-lg">
+									Our manufacturing process focuses on consistent quality, helping Silicon Valley companies produce dependable electronics from prototype to full production.
+								</p>
+							</div>
+						</div>
+						<div className=" w-full">
+							<h3 className=" lg:text-xl">
+								Precision PCB manufacturing and electronics services in San Jose supporting Silicon Valley innovation:
+							</h3>
+							<div className=" mt-16">
+								<Image src={WhyIcon3} alt="ItSJ-G Why Choose Us Icon" className=" -translate-x-8 w-32 h-28" />
+								<div className="">
+									<h3 className=" border-b py-4 text-2xl font-headerFont font-bold text-main uppercase">
+										Fast Turnaround
+									</h3>
+								</div>
+								<p className="mt-6 text-lg">
+									We support Silicon Valley startups and engineering teams with fast-turn PCB prototyping and efficient production timelines, helping companies move quickly from design to working circuit boards.
+								</p>
+							</div>
+							<div className=" mt-12">
+								<Image src={WhyIcon4} alt="ItSJ-G Why Choose Us Icon" className=" -translate-x-8 w-32 h-28" />
+								<div className="">
+									<h3 className=" border-b py-4 text-2xl font-headerFont font-bold text-main uppercase">
+										Silicon Valley Expertise
+									</h3>
+								</div>
+								<p className="mt-6 text-lg">
+									We work closely with Silicon Valley innovators across robotics, aerospace, semiconductor, and EV industries requiring advanced PCB solutions.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section className="">
+				<div className="grid lg:grid-cols-2">
+					{LastData.map((item, index) => (
+						<div key={index} className={`relative h-[400px] lg:h-[500px] ${index % 2 === 0 && "hidden lg:block"}`}>
+							<Image src={item.img} alt={item?.name} className=" w-full h-full object-cover" />
+							<div className={`absolute img-test w-full top-0 h-full`}>
+								<div className="flex items-center justify-center flex-col space-y-6 h-full">
+									<h3 className=" text-2xl lg:text-4xl font-headerFont font-bold text-white text-center">
+										{item?.name}
+									</h3>
+									<div className=" mt-4 w-3/4">
+										<p className=" text-center text-white text-lg">
+											{item?.desc} 
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					))}
+				</div>
+			</section>
 		</div>
     )
 }

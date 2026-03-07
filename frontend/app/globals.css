@@ -83,13 +83,6 @@
     border-image: fill 0 linear-gradient(#00000000, #0B1F3B);
 }
 
-.img-test2{
-    border-radius: 1rem;
-    background: linear-gradient(rgba(255, 255, 255, 0), #163A5F);
-    padding: 1rem;
-    overflow: hidden;
-}
-
 .img-test3{
     background: linear-gradient(#00000000, #163A5F);
     padding: 1rem;

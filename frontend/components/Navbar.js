@@ -68,7 +68,7 @@ export const Navbar = () => {
             {name: "Turnkey PCB Services"},
             {name: "SMT Assembly"},
         ]},
-        {tabName: "Capabilities"},
+        {tabName: "Contact"},
         {tabName: "Resources"}
     ];
 
