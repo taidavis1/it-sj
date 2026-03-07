@@ -66,6 +66,7 @@ export const Navbar = () => {
             {name: "PCB Fabrication"},
             {name: "PCB Assembly"},
             {name: "PCB Prototyping"},
+            {name: "PCB Design"},
             {name: "Turnkey PCB Services"},
             {name: "SMT Assembly"},
         ]},
@@ -78,7 +79,10 @@ export const Navbar = () => {
             <nav className={`fixed top-0 w-full z-60`}>
                 <div className=' grid grid-cols-2 lg:grid-cols-3 items-center'>
                     <Image className={`w-24 h-24 mx-4 lg:mx-16 my-4`} src={Logo} alt='It-sj group Logo' />
-                    <div className='bg-main/60 backdrop-blur-lg rounded-full'>
+                    <div className='lg:bg-main/60 flex lg:justify-center justify-end lg:mx-0 mx-8 lg:backdrop-blur-lg lg:rounded-full'>
+                        <div className=' lg:hidden w-12 h-12 bg-main/60 backdrop-blur-lg rounded-full'>
+                            
+                        </div>
                         <div className=' hidden lg:flex justify-center items-center text-white font-headerFont font-[500px] tracking-[0.5px] space-x-12'>
                             {NavData.map((item, index) => (
                                 item?.subMenu ?
@@ -106,7 +110,7 @@ export const Navbar = () => {
                             ))}
                         </div>
                     </div>
-                    <div className=" flex justify-end mx-16">
+                    <div className=" hidden lg:flex justify-end mx-16">
                         <AnimateBtn hrefLink={""} text="Request A Quote" />
                     </div>
                 </div>

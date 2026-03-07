@@ -60,7 +60,7 @@ const SwiperData = ({data, name}) => {
             className=''
         >
             {data.map((item, index) => (
-                <SwiperSlide key={index} className=' shadow-lg mb-6 hover:opacity-55 transition-all ease-in-out duration-500 rounded-2xl'>
+                <SwiperSlide key={index} className=' shadow-lg lg:mb-6 hover:opacity-55 transition-all ease-in-out duration-500 rounded-2xl'>
                     <div className="rounded-2xl cursor-pointer">
                         <Image src={item.img} alt={item?.name} className=" w-full h-full rounded-t-2xl object-cover" />
                         <div className=" space-y-4 px-4 py-6">

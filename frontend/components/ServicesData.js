@@ -4,6 +4,7 @@ import ImgServices3 from "@/public/ImgServices/3.png";
 import ImgServices4 from "@/public/ImgServices/4.png";
 import ImgServices5 from "@/public/ImgServices/5.png";
 import ImgServices6 from "@/public/ImgServices/6.png";
+import ImgServices7 from "@/public/ImgServices/7.png";
 
 
 const ServicesData = [
@@ -21,6 +22,11 @@ const ServicesData = [
         "name": "PCB Prototyping",
         "desc": "Fast-turn PCB prototyping in San Jose helping Silicon Valley startups and engineering teams move quickly from electronic design to working prototype boards.",
         "img": ImgServices3
+    },
+    {
+        "name": "PCB Design",
+        "desc": "Professional PCB design services in San Jose creating optimized multilayer circuit board layouts with signal integrity, manufacturability, and performance in mind.",
+        "img": ImgServices7
     },
     {
         "name": "Turnkey PCB Manufacturing",

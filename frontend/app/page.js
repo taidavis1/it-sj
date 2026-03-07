@@ -55,16 +55,16 @@ export default function HomePage() {
 							</h1>
 							<div className=" text-sm lg:text-base space-y-4">
 								<p className="">
-									Based in San Jose, California, ITSJ Group specializes in precision PCB manufacturing, PCB fabrication, and PCB assembly services for companies across Silicon Valley and the Bay Area. We support hardware startups, engineering teams, and technology companies with reliable printed circuit board solutions, from rapid PCB prototyping to full production manufacturing. Our focus on quality, efficiency, and consistent performance allows us to help customers move their electronic products from concept to market with confidence.
+									Based in San Jose, California, SCS specializes in precision PCB manufacturing, PCB fabrication, and PCB assembly services for companies across Silicon Valley and the Bay Area. We support hardware startups, engineering teams, and technology companies with reliable printed circuit board solutions, from rapid PCB prototyping to full production manufacturing. Our focus on quality, efficiency, and consistent performance allows us to help customers move their electronic products from concept to market with confidence.
 								</p>
 								<p className="">
-									With experience supporting industries such as aerospace, medical devices, robotics, semiconductor, and EV technology, our team understands the demanding standards required for modern electronics. By combining advanced manufacturing processes, strict quality control, and responsive customer support, ITSJ Group delivers high-precision PCB fabrication and assembly in San Jose that engineers and innovators can depend on. Whether you need fast-turn prototypes or scalable production, we are committed to providing reliable PCB solutions that power the next generation of technology.
+									With experience supporting industries such as aerospace, medical devices, robotics, semiconductor, and EV technology, our team understands the demanding standards required for modern electronics. By combining advanced manufacturing processes, strict quality control, and responsive customer support, SCS delivers high-precision PCB fabrication and assembly in San Jose that engineers and innovators can depend on. Whether you need fast-turn prototypes or scalable production, we are committed to providing reliable PCB solutions that power the next generation of technology.
 								</p>
 							</div>
 						</div>
 						<div className=" group">
 							<div className=" overflow-hidden p-2 lg:p-6 rounded-2xl">
-								<Image src={Section1Img} alt="ItSJ-G About Us Section Image" className="w-full group-hover:scale-105 shadow-xl group-hover:opacity-55 cursor-pointer ease-in-out duration-500 rounded-2xl" />
+								<Image src={Section1Img} alt="SCS About Us Section Image" className="w-full group-hover:scale-105 shadow-xl group-hover:opacity-55 cursor-pointer ease-in-out duration-500 rounded-2xl" />
 							</div>
 						</div>
 					</div>
@@ -72,10 +72,10 @@ export default function HomePage() {
 			</section>
 
 			<section className="bg-lightGray relative">
-				<div className="pb-8 lg:pb-44 px-4 pt-14 lg:pt-28 lg:px-0 mx-auto max-w-7xl">
+				<div className="pb-32 lg:pb-44 px-4 pt-14 lg:pt-28 lg:px-0 mx-auto max-w-7xl">
 					<div className=" space-y-10 flex flex-col items-center">
 						<div className="bg-linear-to-r flex items-center justify-center space-x-[4px] text-white text-center from-[#007ec7] to-[#000d68] py-4 shadow-xl rounded-full w-[160px]">
-							<Image src={IndustryIcon} className=" brightness-0 invert w-6 h-6" alt="ItSJ-G Industry Icon" />
+							<Image src={IndustryIcon} className=" brightness-0 invert w-6 h-6" alt="SCS Industry Icon" />
 							<span className=" text-base">
 								Industries
 							</span>
@@ -129,16 +129,16 @@ export default function HomePage() {
 				</svg>
 			</section>
 
-			<section className=" -translate-y-8 bg-[url('/servicesBG.png')] bg-cover bg-center bg-no-repeat">
-				<div className="pb-8 lg:pb-14 px-2 pt-14 lg:pt-14 lg:px-0 mx-auto max-w-7xl">
+			<section className=" -translate-y-14 lg:-translate-y-8 bg-[url('/servicesBG.png')] bg-cover bg-center bg-no-repeat">
+				<div className="lg:pb-14 px-4 pt-14 lg:pt-14 lg:px-0 mx-auto max-w-7xl">
 					<div className=" space-y-12 flex flex-col items-center">
 						<div className="bg-linear-to-r flex items-center justify-center space-x-[4px] text-white text-center from-[#007ec7] to-[#000d68] py-4 shadow-xl rounded-full w-[168px]">
-							<Image src={IndustryIcon} className=" brightness-0 invert w-6 h-6" alt="ItSJ-G Industry Icon" />
+							<Image src={IndustryIcon} className=" brightness-0 invert w-6 h-6" alt="SCS Industry Icon" />
 							<span className=" text-base">
 								Our Services
 							</span>
 						</div>
-						<div className=" flex space-x-2 font-bold font-headerFont lg:text-4xl  items-center">
+						<div className=" lg:space-x-2 font-bold font-headerFont lg:text-4xl lg:justify-start justify-center flex flex-wrap lg:flex-nowrap space-x-1 text-2xl  items-center">
 							<span className="text-main">
 								Complete
 							</span>
@@ -149,23 +149,23 @@ export default function HomePage() {
 								Services
 							</span>
 						</div>
-						<div className=" -translate-y-4 text-center text-lg w-3/4">
+						<div className=" -translate-y-4 text-center lg:text-lg lg:w-3/4">
 							<p className="">
 								From rapid PCB prototyping to full production, we provide PCB fabrication, PCB assembly, electronics testing, and embedded software development services in San Jose, California. Supporting Silicon Valley startups and Bay Area technology companies, our team delivers reliable solutions that help engineers turn electronic designs into high-performance products.
 							</p>
 						</div>
 					</div>
-					<div className="mt-14">
+					<div className="lg:mt-14 mt-10">
 						<SwiperData data={ServicesData} />
 					</div>
 				</div>
 			</section>
 
 			<section className="bg-lightGray">
-				<div className="pb-8 lg:pb-24 px-2 pt-14 lg:pt-28 lg:px-0 mx-auto max-w-7xl">
+				<div className="pb-12 lg:pb-24 px-4 pt-14 lg:pt-28 lg:px-0 mx-auto max-w-7xl">
 					<div className=" flex justify-center">
 						<div className="bg-linear-to-r flex items-center justify-center space-x-[4px] text-white text-center from-[#007ec7] to-[#000d68] py-4 shadow-xl rounded-full w-[200px]">
-							<Image src={IndustryIcon} className=" brightness-0 invert w-6 h-6" alt="ItSJ-G Industry Icon" />
+							<Image src={IndustryIcon} className=" brightness-0 invert w-6 h-6" alt="SCS Industry Icon" />
 							<span className=" text-base">
 								Why Choose Us
 							</span>
@@ -173,60 +173,65 @@ export default function HomePage() {
 					</div>
 					<div className=" lg:flex-row flex-col flex items-center lg:gap-x-24 mt-20">
 						<div className=" w-full flex flex-col">
-							<div className=" flex space-x-2 font-bold font-headerFont lg:text-5xl  items-center">
+							<div className=" flex lg:flex-nowrap flex-wrap text-3xl space-x-2 font-bold  font-headerFont lg:text-5xl  items-center">
 								<span className="text-main">
-									The ITSJ-G
+									The SCS
 								</span>
 								<span className=" text-clip text-transparent bg-linear-to-r to-[#007ec7] from-[#000d68] bg-clip-text">
 									Difference.
 								</span>
 							</div>
-							<div className=" mt-20">
-								<Image src={WhyIcon1} alt="ItSJ-G Why Choose Us Icon" className=" -translate-x-8 w-32 h-28" />
+							<div className=" lg:hidden mt-6">
+								<h3 className=" lg:text-xl text-lg">
+									Precision PCB manufacturing and electronics services in San Jose supporting Silicon Valley innovation:
+								</h3>
+							</div>
+							<div className=" mt-12 lg:mt-20">
+								<Image src={WhyIcon1} alt="SCS Why Choose Us Icon" className="-translate-x-4 lg:-translate-x-8 lg:w-32 lg:h-28" />
 								<div className="">
-									<h3 className=" border-b py-4 text-2xl font-headerFont font-bold text-main uppercase">
+									<h3 className=" border-b py-4 text-xl lg:text-2xl font-headerFont font-bold text-main uppercase">
 										Precision Engineering
 									</h3>
 								</div>
-								<p className="mt-6 text-lg">
+								<p className="mt-6 lg:text-lg">
 									We deliver high-precision PCB fabrication and assembly in San Jose, ensuring every board meets strict quality and performance standards for advanced electronics.
 								</p>
 							</div>
-							<div className=" mt-12">
-								<Image src={WhyIcon2} alt="ItSJ-G Why Choose Us Icon" className=" -translate-x-8 w-32 h-28" />
+							<div className=" mt-8 lg:mt-12">
+								<Image src={WhyIcon2} alt="SCS Why Choose Us Icon" className=" -translate-x-4 lg:-translate-x-8 lg:w-32 lg:h-28" />
 								<div className="">
-									<h3 className=" border-b py-4 text-2xl font-headerFont font-bold text-main uppercase">
+									<h3 className=" border-b py-4 text-xl lg:text-2xl font-headerFont font-bold text-main uppercase">
 										Reliable Manufacturing
 									</h3>
 								</div>
-								<p className="mt-6 text-lg">
+								<p className="mt-6 lg:text-lg">
 									Our manufacturing process focuses on consistent quality, helping Silicon Valley companies produce dependable electronics from prototype to full production.
 								</p>
 							</div>
 						</div>
 						<div className=" w-full">
-							<h3 className=" lg:text-xl">
+							<h3 className=" hidden lg:block lg:text-xl">
 								Precision PCB manufacturing and electronics services in San Jose supporting Silicon Valley innovation:
 							</h3>
-							<div className=" mt-16">
-								<Image src={WhyIcon3} alt="ItSJ-G Why Choose Us Icon" className=" -translate-x-8 w-32 h-28" />
+							<div className=" mt-8 lg:mt-16">
+								<Image src={WhyIcon3} alt="SCS Why Choose Us Icon" className=" -translate-x-4 lg:-translate-x-8 lg:w-32 lg:h-288" />
 								<div className="">
-									<h3 className=" border-b py-4 text-2xl font-headerFont font-bold text-main uppercase">
+									<h3 className=" border-b py-4 text-xl lg:text-2xl font-headerFont font-bold text-main uppercase">
 										Fast Turnaround
 									</h3>
 								</div>
-								<p className="mt-6 text-lg">
+								<p className="mt-6 lg:text-lg">
 									We support Silicon Valley startups and engineering teams with fast-turn PCB prototyping and efficient production timelines, helping companies move quickly from design to working circuit boards.
 								</p>
 							</div>
 							<div className=" mt-12">
-								<Image src={WhyIcon4} alt="ItSJ-G Why Choose Us Icon" className=" -translate-x-8 w-32 h-28" />
+								<Image src={WhyIcon4} alt="SCS Why Choose Us Icon" className=" -translate-x-4 lg:-translate-x-8 lg:w-32 lg:h-28" />
 								<div className="">
-									<h3 className=" border-b py-4 text-2xl font-headerFont font-bold text-main uppercase">
+									<h3 className=" border-b py-4 text-xl lg:text-2xl font-headerFont font-bold text-main uppercase">
 										Silicon Valley Expertise
 									</h3>
 								</div>
-								<p className="mt-6 text-lg">
+								<p className="mt-6 lg:text-lg">
 									We work closely with Silicon Valley innovators across robotics, aerospace, semiconductor, and EV industries requiring advanced PCB solutions.
 								</p>
 							</div>
@@ -241,12 +246,12 @@ export default function HomePage() {
 						<div key={index} className={`relative h-[400px] lg:h-[500px] ${index % 2 === 0 && "hidden lg:block"}`}>
 							<Image src={item.img} alt={item?.name} className=" w-full h-full object-cover" />
 							<div className={`absolute img-test w-full top-0 h-full`}>
-								<div className="flex items-center justify-center flex-col space-y-6 h-full">
+								<div className="flex lg:px-0 px-4 items-center justify-center flex-col space-y-4 lg:space-y-6 h-full">
 									<h3 className=" text-2xl lg:text-4xl font-headerFont font-bold text-white text-center">
 										{item?.name}
 									</h3>
-									<div className=" mt-4 w-3/4">
-										<p className=" text-center text-white text-lg">
+									<div className=" mt-4 lg:w-3/4">
+										<p className=" text-center text-white lg:text-lg">
 											{item?.desc} 
 										</p>
 									</div>
@@ -258,18 +263,18 @@ export default function HomePage() {
 			</section>
 
 			<section id='resources' className="relative bg-white">
-				<Image alt='ItSJ-G Circuit Icon Image' src={CircuitL} className=' absolute w-[400px] -top-8 translate-x-8 -left-24' />
+				<Image alt='SCS Circuit Icon Image' src={CircuitL} className=' absolute w-54 lg:w-[400px] -top-8 translate-x-8 -left-20 lg:-left-24' />
 
-				<div className='pb-2 lg:pb-24 px-2 pt-16 lg:pt-24 lg:px-0 mx-auto max-w-7xl'>
+				<div className='pb-12 lg:pb-24 px-4 pt-16 lg:pt-24 lg:px-0 mx-auto max-w-7xl'>
 					<div className=''>
 						<div className='lg:space-y-12 space-y-8 flex text-center flex-col items-center'>
 							<div className="bg-linear-to-r flex items-center justify-center space-x-[4px] text-white text-center from-[#007ec7] to-[#000d68] py-4 shadow-xl rounded-full w-[168px]">
-								<Image src={IndustryIcon} className=" brightness-0 invert w-6 h-6" alt="ItSJ-G Industry Icon" />
+								<Image src={IndustryIcon} className=" brightness-0 invert w-6 h-6" alt="SCS Industry Icon" />
 								<span className=" text-base">
 									Resources
 								</span>
 							</div>
-							<div className=" flex space-x-2 font-bold font-headerFont lg:text-4xl  items-center">
+							<div className=" flex lg:flex-nowrap flex-wrap space-x-2 font-bold font-headerFont text-2xl lg:text-4xl  items-center">
 								<span className="text-main">
 									PCB Manufacturing
 								</span>
@@ -277,13 +282,13 @@ export default function HomePage() {
 									 FAQs
 								</span>
 							</div>
-							<div className=" -translate-y-4 text-center text-lg w-3/4">
+							<div className=" -translate-y-4 text-center lg:text-lg lg:w-3/4">
 								<p className="">
 									Find answers to common questions about PCB fabrication, PCB assembly, and electronics manufacturing in San Jose, supporting Silicon Valley startups and Bay Area technology companies.
 								</p>
 							</div>
 						</div>
-						<div className='lg:mt-12 mt-8 grid lg:grid-cols-2 items-center gap-8 lg:gap-12'>
+						<div className='lg:mt-12 mt-6 grid lg:grid-cols-2 items-center gap-8 lg:gap-12'>
 							<div className=' lg:space-y-2 space-y-4'>
 								{faqData.map((item, index) => (
 									<div key={index} className="h-fit overflow-hidden">
@@ -324,7 +329,7 @@ export default function HomePage() {
 									</div>
 								))}
 							</div>
-							<div className='lg:p-8 lg:h-full h-100 p-4 relative'>
+							<div className='lg:p-8 lg:h-full h-100 p-2 lg:p-4 relative'>
 								<Image src={faqImage} alt='Frequently Asked Questions Image' className=' h-full object-cover rounded-xl' />
 							</div>
 						</div>

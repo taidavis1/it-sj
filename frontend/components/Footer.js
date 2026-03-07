@@ -16,20 +16,20 @@ const Footer = () => {
     return (
         <div className='pb-8 bg-main text-white'>
             <div className=' grid lg:grid-cols-2'>
-                <div className='border-r pt-12 border-b border-white pb-12'>
+                <div className='border-r lg:pt-12 border-b border-white pb-12'>
                     <div className='grid lg:px-14 px-8 items-center pt-12 lg:grid-cols-2 gap-12'>
                         <div className="">
-                            <h1 className=" text-white font-bold font-headerFont lg:text-2xl">
+                            <h1 className=" text-white font-bold font-headerFont text-xl lg:text-2xl">
                                 Advanced PCB Manufacturing Experts
                             </h1>
                             <p className=" mt-4 text-sm">
                                 Delivering reliable PCB fabrication, PCB assembly, and electronics manufacturing services in San Jose, supporting Silicon Valley engineers from prototype to production.
                             </p>
                             <div className=' mt-8'>
-                                <Link className=' hover:opacity-50 flex items-center space-x-1' href={"tel:+14086096392"} target='__blank'>
+                                <Link className=' hover:opacity-50 flex items-center space-x-1' href={"tel:4087057113"} target='__blank'>
                                     <IoPhonePortraitOutline className='w-6 h-6 text-white' />
                                     <span className=''>
-                                        (408) 609-6392
+                                        (408) 705-7113
                                     </span>
                                 </Link>
                             </div>
@@ -135,7 +135,7 @@ const Footer = () => {
                         <span>
                             © {new Date().getFullYear()}
                         </span>
-                        <Link className='hover:underline font-bold ' href='/'>ITSJ-G </Link>
+                        <Link className='hover:underline font-bold ' href='/'>SCS </Link>
                         <span>All rights reserved.</span>
                     </div>
                     <div className='lg:text-base lg:order-2 order-1 text-sm lg:justify-start justify-center inline-flex lg:items-start text-white space-x-4'>
