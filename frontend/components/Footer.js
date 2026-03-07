@@ -71,8 +71,21 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className=' mx-20 mt-4 text-white'>
-                dasdad
+            <div className=' lg:mx-20 mt-8 text-white'>
+                <div className=' flex lg:flex-row flex-col lg:items-center lg:justify-between'>
+                    <div className='inline-flex justify-center lg:justify-start lg:order-1 order-2 text-sm lg:text-base text-white space-x-1'>
+                        <span>
+                            © {new Date().getFullYear()}
+                        </span>
+                        <Link className='hover:underline font-bold ' href='/'>ITSJ-G </Link>
+                        <span>All rights reserved.</span>
+                    </div>
+                    <div className='lg:text-base lg:order-2 order-1 text-sm lg:justify-start justify-center inline-flex lg:items-start text-white space-x-4'>
+                        <span>
+                            CEO & President: Mr. Chau Tran
+                        </span>
+                    </div>
+                </div>
             </div>
         </div>
     )
