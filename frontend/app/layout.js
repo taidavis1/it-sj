@@ -2,6 +2,7 @@ import {Sora, Inter} from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { StoreProvider } from "@/redux/StoreProvider";
+import Footer from "@/components/Footer";
 
 
 
@@ -32,6 +33,7 @@ export default function RootLayout({ children }) {
 					<main className=" font-txtFont scroll-smooth overflow-hidden">
 						<Navbar />
 						{children}
+						<Footer />
 					</main>
 				</StoreProvider>
 			</body>

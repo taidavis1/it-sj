@@ -23,7 +23,9 @@ import BG3 from "@/public/Background/3.png";
 import BG4 from "@/public/Background/4.png";
 
 import faqData from "@/components/FaqData";
+import CircuitL from "@/public/Icon/alt/circuitL.png";
 
+import faqImage from "@/public/faqPic.png";
 
 export default function HomePage() {
 
@@ -255,32 +257,29 @@ export default function HomePage() {
 				</div>
 			</section>
 
-			<section id='resources' className="relative bg-[#F1F5F9]">
-				<svg 
-					xmlns="http://www.w3.org/2000/svg" 
-					viewBox="0 0 1440 320"
-					preserveAspectRatio="none"
-					className='absolute text-white lg:-top-20 -top-8 w-full h-14 sm:h-36'
-				>
-					<path 
-						fill="currentColor" 
-						d="M0,256L24,250.7C48,245,96,235,144,245.3C192,256,240,288,288,293.3C336,299,384,277,432,266.7C480,256,528,256,576,234.7C624,213,672,171,720,160C768,149,816,171,864,192C912,213,960,235,1008,250.7C1056,267,1104,277,1152,277.3C1200,277,1248,267,1296,250.7C1344,235,1392,213,1416,202.7L1440,192L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z"					
-					/>
-				</svg>
-				<div className='pb-2 lg:pb-4 px-2 pt-16 lg:pt-24 lg:px-0 mx-auto max-w-7xl'>
+			<section id='resources' className="relative bg-white">
+				<Image alt='ItSJ-G Circuit Icon Image' src={CircuitL} className=' absolute w-[400px] -top-8 translate-x-8 -left-24' />
+
+				<div className='pb-2 lg:pb-24 px-2 pt-16 lg:pt-24 lg:px-0 mx-auto max-w-7xl'>
 					<div className=''>
 						<div className='lg:space-y-12 space-y-8 flex text-center flex-col items-center'>
-							<div className=' shadow-xl w-32 rounded-full py-2 text-center bg-navbar/50'>
-								<span className=' text-white text-lg font-headerFont'>
+							<div className="bg-linear-to-r flex items-center justify-center space-x-[4px] text-white text-center from-[#007ec7] to-[#000d68] py-4 shadow-xl rounded-full w-[168px]">
+								<Image src={IndustryIcon} className=" brightness-0 invert w-6 h-6" alt="ItSJ-G Industry Icon" />
+								<span className=" text-base">
 									Resources
 								</span>
 							</div>
-							<h1 className=' font-headerFont text-3xl text-navbar tracking-tight lg:text-4xl'>
-								Frequently Asked Questions
-							</h1>
-							<div className='lg:w-3/4'>
-								<p className=' lg:text-lg'>
-									Find answers to common questions about sheet metal fabrication, CNC laser cutting, welding, and powder coating services in Union City, CA. We proudly serve businesses throughout the East Bay and Bay Area with precision manufacturing solutions.
+							<div className=" flex space-x-2 font-bold font-headerFont lg:text-4xl  items-center">
+								<span className="text-main">
+									PCB Manufacturing
+								</span>
+								<span className=" text-clip text-transparent bg-linear-to-r to-[#007ec7] from-[#000d68] bg-clip-text">
+									 FAQs
+								</span>
+							</div>
+							<div className=" -translate-y-4 text-center text-lg w-3/4">
+								<p className="">
+									Find answers to common questions about PCB fabrication, PCB assembly, and electronics manufacturing in San Jose, supporting Silicon Valley startups and Bay Area technology companies.
 								</p>
 							</div>
 						</div>
@@ -290,9 +289,9 @@ export default function HomePage() {
 									<div key={index} className="h-fit overflow-hidden">
 										<button
 											onClick={() => toggleFAQ(index)}
-											className="flex border-b border-b-navbar rounded-2xl justify-between items-center w-full group p-4 lg:p-6 text-left cursor-pointer transition-colors duration-500 group"
+											className="flex border-b border-b-navbar justify-between items-center w-full group p-4 lg:p-6 text-left cursor-pointer transition-colors duration-500 group"
 										>
-											<span className="lg:text-lg text-navbar text-base font-headerFont pr-6 text-left flex-1">
+											<span className="lg:text-lg text-main text-base font-headerFont pr-6 text-left flex-1">
 												{item.question}
 											</span>
 											<div className="shrink-0 w-6 h-6 flex items-center justify-center">
@@ -326,12 +325,12 @@ export default function HomePage() {
 								))}
 							</div>
 							<div className='lg:p-8 lg:h-full h-100 p-4 relative'>
-								{/* <Image src={faqImage} alt='Frequently Asked Questions Image' className=' h-full object-cover rounded-xl' /> */}
+								<Image src={faqImage} alt='Frequently Asked Questions Image' className=' h-full object-cover rounded-xl' />
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 		</div>
-    )
-}
+    );
+};
