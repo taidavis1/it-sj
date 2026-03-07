@@ -60,3 +60,5 @@ const faqData= [
         "answer": "You can contact our San Jose team directly or submit your project details online to receive a quote for PCB fabrication, assembly, or electronics development services."
     }
 ];
+
+export default faqData;
