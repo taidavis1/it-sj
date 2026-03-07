@@ -13,10 +13,48 @@ const Footer = () => {
     ];
 
     return (
-        <div className='pb-8 bg-main'>
+        <div className='pb-8 bg-main text-white'>
             <div className=' grid lg:grid-cols-2 lg:h-[400px]'>
                 <div className='border-r border-b border-white'>
-                    <div className='mx-20'></div>
+                    <div className='grid lg:px-12 items-center pt-12 lg:grid-cols-2 gap-12'>
+                        <div className="">
+                            <h1 className=" text-white font-bold font-headerFont text-3xl">
+                                Advanced PCB Manufacturing Experts
+                            </h1>
+                        </div>
+                        <div className=" flex flex-col">
+                            <div className='space-y-2'>
+                                <h3 className="font-headerFont font-bold">
+                                    U.S. Headquater
+                                </h3>
+                                <Link href={""} className="hover:opacity-50 transition-all duration-300">
+                                    <span className=' text-lg'>
+                                        148 E. Brokaw Rd. San Jose, CA 95112
+                                    </span>
+                                </Link>
+                            </div>
+                            <div className='space-y-2 mt-8'>
+                                <h3 className=" font-headerFont font-bold">
+                                    VietNam Office #1
+                                </h3>
+                                <Link href={""} className="hover:opacity-50 transition-all duration-300">
+                                    <span className=' text-base'>
+                                        4th & 5th Floor, Kico Building, 46 Bach Dang Street, Ward 02, Tan Binh District, HCMC, Vietnam
+                                    </span>
+                                </Link>
+                            </div>
+                            <div className='space-y-2 mt-8'>
+                                <h3 className="font-headerFont font-bold">
+                                    VietNam Office #2
+                                </h3>
+                                <Link href={""} className="hover:opacity-50 transition-all duration-300">
+                                    <span className=' text-base'>
+                                        3rd Floor, Sacom Chip Sang Building, Hi- Tech Park, Thu Duc city, HCMC, Vietnam
+                                    </span>
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div className='lg:grid-cols-3 place-content-center lg:pt-0 pt-8 px-8 lg:px-28 grid-cols-2 grid border-b border-white'>
                     <div className=''>
