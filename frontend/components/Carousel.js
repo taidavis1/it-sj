@@ -79,19 +79,19 @@ export const Carousel = () => {
                 {carouselData.map((item) => (
                     <SwiperSlide className=' relative' key={item.id}>
                         {({ isActive }) => (
-                            <div>
-                                <Image loading='lazy' src={item.img} alt={item.title} className={`animate-zoom object-center object-cover w-full h-full`} />
+                            <div className="w-full h-full">
+                                <Image loading='lazy' src={item.img} alt={item.title} className={`animate-zoom w-full object-center object-cover h-full`} />
                                 <div className='img-test w-full h-full absolute top-0'>
-                                    <div className=' mt-8 mx-auto flex flex-col justify-center max-w-7xl h-full'>
+                                    <div className=' lg:px-0 px-2 mt-12 lg:mt-8 mx-auto flex flex-col items-start justify-center max-w-7xl h-full'>
                                         <motion.div 
                                             animate={{y: isActive ? 0 : 100, opacity: isActive ? 1 : 0}}
                                             transition={{duration: 1, ease: "easeInOut" , type: "spring", stiffness: 100}}
-                                            className='w-3/4'
+                                            className='lg:w-3/4'
                                         >
-                                            <h1 className=' text-white font-bold font-headerFont text-5xl uppercase'>
+                                            <h1 className=' text-white font-bold font-headerFont text-2xl lg:text-5xl uppercase'>
                                                 {item?.title}
                                             </h1>
-                                            <p className=' mt-10 text-white text-2xl'>
+                                            <p className=' mt-4 lg:mt-10 text-white text-lg lg:text-2xl'>
                                                 {item?.desc}
                                             </p>
                                         </motion.div>
@@ -109,8 +109,8 @@ export const Carousel = () => {
                 ))}
             </Swiper>
 
-            <div className='w-full z-50 absolute -bottom-28'>
-                <div className=' mx-auto max-w-4xl'>
+            <div className='w-full z-50 absolute -bottom-12 lg:-bottom-28'>
+                <div className=' mx-auto px-4 lg:px-0 lg:max-w-4xl'>
                     <div className=' lg:translate-x-4 place-items-center rounded-4xl grid grid-cols-4 gap-8'>
                         {industryData.map((item, index) => (
                             <div className={`rounded-full ${index === 2 && "-translate-y-2"} ${index === 3 && "-translate-y-8"} hover:backdrop-blur-md hover:bg-white/50 transition-all duration-300 cursor-pointer shadow-lg bg-white`} key={index}>
@@ -133,7 +133,7 @@ export const Carousel = () => {
                 >
                 </path>
             </svg>
-            <Image alt='ItSJ-G Circuit Icon Image' src={CircuitL} className=' absolute w-[400px] translate-y-4 translate-x-8 -left-24' />
+            <Image alt='ItSJ-G Circuit Icon Image' src={CircuitL} className=' absolute w-64 lg:w-[400px] -translate-y-5 lg:translate-y-4 translate-x-8 -scale-x-100 lg:scale-x-100 -right-12 lg:-left-24' />
         </div>
     )
 }

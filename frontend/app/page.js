@@ -47,13 +47,13 @@ export default function HomePage() {
 			<Carousel />
 
 			<section className="bg-white">
-				<div className="pb-8 lg:pb-12 px-2 pt-14 lg:pt-48 lg:px-0 mx-auto max-w-7xl">
-					<div className=" lg:grid-cols-2 grid gap-12 items-center">
-						<div className=" space-y-8">
-							<h1 className=" lg:text-4xl text-main font-bold font-headerFont">
+				<div className="pb-8 lg:pb-12 px-4 pt-24 lg:pt-48 lg:px-0 mx-auto max-w-7xl">
+					<div className=" lg:grid-cols-2 grid gap-8 lg:gap-12 items-center">
+						<div className=" space-y-4 lg:space-y-8">
+							<h1 className=" lg:text-4xl text-2xl text-main font-bold font-headerFont">
 								Engineering Behind the Boards
 							</h1>
-							<div className=" text-base space-y-4">
+							<div className=" text-sm lg:text-base space-y-4">
 								<p className="">
 									Based in San Jose, California, ITSJ Group specializes in precision PCB manufacturing, PCB fabrication, and PCB assembly services for companies across Silicon Valley and the Bay Area. We support hardware startups, engineering teams, and technology companies with reliable printed circuit board solutions, from rapid PCB prototyping to full production manufacturing. Our focus on quality, efficiency, and consistent performance allows us to help customers move their electronic products from concept to market with confidence.
 								</p>
@@ -63,7 +63,7 @@ export default function HomePage() {
 							</div>
 						</div>
 						<div className=" group">
-							<div className=" overflow-hidden p-6 rounded-2xl">
+							<div className=" overflow-hidden p-2 lg:p-6 rounded-2xl">
 								<Image src={Section1Img} alt="ItSJ-G About Us Section Image" className="w-full group-hover:scale-105 shadow-xl group-hover:opacity-55 cursor-pointer ease-in-out duration-500 rounded-2xl" />
 							</div>
 						</div>
@@ -72,7 +72,7 @@ export default function HomePage() {
 			</section>
 
 			<section className="bg-lightGray relative">
-				<div className="pb-8 lg:pb-44 px-2 pt-14 lg:pt-28 lg:px-0 mx-auto max-w-7xl">
+				<div className="pb-8 lg:pb-44 px-4 pt-14 lg:pt-28 lg:px-0 mx-auto max-w-7xl">
 					<div className=" space-y-10 flex flex-col items-center">
 						<div className="bg-linear-to-r flex items-center justify-center space-x-[4px] text-white text-center from-[#007ec7] to-[#000d68] py-4 shadow-xl rounded-full w-[160px]">
 							<Image src={IndustryIcon} className=" brightness-0 invert w-6 h-6" alt="ItSJ-G Industry Icon" />
@@ -80,7 +80,7 @@ export default function HomePage() {
 								Industries
 							</span>
 						</div>
-						<div className=" flex space-x-2 font-bold font-headerFont lg:text-4xl  items-center">
+						<div className=" flex flex-wrap lg:flex-nowrap space-x-1 text-2xl justify-center lg:justify-start lg:space-x-2 font-bold font-headerFont lg:text-4xl items-center">
 							<span className="text-main">
 								Where Our
 							</span>
@@ -91,18 +91,18 @@ export default function HomePage() {
 								Make an Impact
 							</span>
 						</div>
-						<div className=" -translate-y-4 text-center text-lg w-2/3">
+						<div className=" -translate-y-4 text-center lg:text-lg lg:w-2/3">
 							<p className="">
 								Our San Jose PCB manufacturing services support industries that depend on precision electronics, including robotics, aerospace, medical technology, and semiconductor equipment.
 							</p>
 						</div>
 					</div>
-					<div className=" grid lg:grid-cols-2 gap-12 mt-14">
+					<div className=" grid lg:grid-cols-2 gap-12 mt-12 lg:mt-14">
 						{IndustryList.map((item, index) => (
 							<div key={index} className=" h-fit hover:scale-105 hover:opacity-55 transition-all ease-in-out duration-500 shadow-xl rounded-2xl">
-								<div className="rounded-2xl cursor-pointer flex space-x-4">
-									<Image src={item.icon} alt={item?.name} className=" w-44 h-44 rounded-l-2xl rounded-tr-2xl" />
-									<div className=" space-y-4 px-4 mt-3">
+								<div className="rounded-2xl cursor-pointer lg:flex-row flex-col flex space-x-4">
+									<Image src={item.icon} alt={item?.name} className=" lg:w-44 lg:h-44 rounded-l-2xl rounded-tr-2xl" />
+									<div className=" space-y-4 px-4 lg:py-0 py-4 lg:mt-3">
 										<h3 className=" text-main text-xl font-headerFont font-bold">
 											{item?.name}
 										</h3>

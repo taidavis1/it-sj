@@ -1,7 +1,7 @@
 import React from 'react';
 import ServicesData from './ServicesData';
 import Link from 'next/link';
-import { GrFormNext, GrPhoneHorizontal, GrMail} from 'react-icons/gr';
+import { GrFormNext} from 'react-icons/gr';
 import {IoPhonePortraitOutline, IoLocationOutline, IoMailOutline} from "react-icons/io5";
 
 const Footer = () => {
@@ -17,11 +17,14 @@ const Footer = () => {
         <div className='pb-8 bg-main text-white'>
             <div className=' grid lg:grid-cols-2'>
                 <div className='border-r pt-12 border-b border-white pb-12'>
-                    <div className='grid lg:px-14 items-center pt-12 lg:grid-cols-2 gap-12'>
+                    <div className='grid lg:px-14 px-8 items-center pt-12 lg:grid-cols-2 gap-12'>
                         <div className="">
                             <h1 className=" text-white font-bold font-headerFont lg:text-2xl">
                                 Advanced PCB Manufacturing Experts
                             </h1>
+                            <p className=" mt-4 text-sm">
+                                Delivering reliable PCB fabrication, PCB assembly, and electronics manufacturing services in San Jose, supporting Silicon Valley engineers from prototype to production.
+                            </p>
                             <div className=' mt-8'>
                                 <Link className=' hover:opacity-50 flex items-center space-x-1' href={"tel:+14086096392"} target='__blank'>
                                     <IoPhonePortraitOutline className='w-6 h-6 text-white' />

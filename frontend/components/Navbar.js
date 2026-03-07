@@ -10,6 +10,7 @@ import { usePathname } from 'next/navigation';
 import { setActiveTab } from '@/redux/ActiveTabSlice';
 
 import { GrFormNext} from 'react-icons/gr';
+import { AnimateBtn } from './AnimateBtn';
 
 
 export const Navbar = () => {
@@ -76,9 +77,9 @@ export const Navbar = () => {
         <div className=''>
             <nav className={`fixed top-0 w-full z-60`}>
                 <div className=' grid grid-cols-2 lg:grid-cols-3 items-center'>
-                    <Image className={`w-24 h-24 mx-16 my-4`} src={Logo} alt='It-sj group Logo' />
+                    <Image className={`w-24 h-24 mx-4 lg:mx-16 my-4`} src={Logo} alt='It-sj group Logo' />
                     <div className='bg-main/60 backdrop-blur-lg rounded-full'>
-                        <div className=' flex justify-center items-center text-white font-headerFont font-[500px] tracking-[0.5px] space-x-12'>
+                        <div className=' hidden lg:flex justify-center items-center text-white font-headerFont font-[500px] tracking-[0.5px] space-x-12'>
                             {NavData.map((item, index) => (
                                 item?.subMenu ?
                                     <div className='relative' key={index} onMouseEnter={() => handleHover(index)} onMouseLeave={() => handleHover(index)}>
@@ -104,6 +105,9 @@ export const Navbar = () => {
                                     </Link>
                             ))}
                         </div>
+                    </div>
+                    <div className=" flex justify-end mx-16">
+                        <AnimateBtn hrefLink={""} text="Request A Quote" />
                     </div>
                 </div>
             </nav>
