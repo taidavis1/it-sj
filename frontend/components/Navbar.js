@@ -61,10 +61,10 @@ export const Navbar = () => {
             <nav className={``}>
                 <div className=' grid grid-cols-2 lg:grid-cols-3 items-center'>
                     <Image className={`w-24 h-24 mx-4 lg:mx-16 my-4`} src={Logo} alt='It-sj group Logo' />
-                    <div className='lg:bg-main/60 flex lg:justify-center justify-end lg:mx-0 mx-8 lg:backdrop-blur-lg lg:rounded-full'>
-                        <div className={`lg:hidden w-14 h-14 ${isOpen? 'opacity-0' : 'opacity-100'} bg-main/60 backdrop-blur-lg flex items-center justify-center rounded-full`}>
+                    <div className='lg:bg-main/60 flex lg:justify-center justify-end lg:mx-0 mx-4 lg:backdrop-blur-lg lg:rounded-full'>
+                        <div className={`lg:hidden w-12 h-12 ${isOpen? 'opacity-0' : 'opacity-100'} bg-main/60 backdrop-blur-lg flex items-center justify-center rounded-full`}>
                             <div onClick={() => setIsOpen(!isOpen)} className={`${isOpen? 'pointer-events-none' : ''} cursor-pointer`}>
-                                <HiBars3BottomLeft className={`text-white w-8 h-8 transition-all duration-500`} />
+                                <HiBars3BottomLeft className={`text-white w-6 h-6 transition-all duration-500`} />
                             </div>
                         </div>
                         <div className=' hidden lg:flex justify-center items-center text-white font-headerFont font-[500px] tracking-[0.5px] space-x-12'>
@@ -106,14 +106,38 @@ export const Navbar = () => {
                 <div className="flex flex-col mt-14 space-y-4 h-full text-white">
                     <div className='flex flex-col space-y-4'>
                         {NavData.map((data, index) => (
-                            <Link 
-                                key={index}
-                                href={data?.link || ""}
-                                onClick={() => setIsOpen(false)}
-                                className="text-lg py-4 hover:opacity-50 transition border-b px-6 duration-500 ease-in-out"
-                            >
-                                {data?.name}
-                            </Link>
+                            <React.Fragment key={index}>
+                                {
+                                    index !== 1 ?
+                                        <Link 
+                                            key={index}
+                                            href={data?.link || ""}
+                                            onClick={() => setIsOpen(false)}
+                                            className="text-lg py-4 transition border-b px-6 duration-500 ease-in-out"
+                                        >
+                                            {data?.tabName}
+                                        </Link>
+                                    :
+                                    <div key={index} className='text-lg py-4 transition border-b px-4 duration-500 ease-in-out flex items-center justify-between'>
+                                        <span className="">
+                                            {data?.tabName}
+                                        </span>
+                                        <GrFormNext onClick={() => handleHover(index)} className={ `w-6 ${subMenu[index] ? 'rotate-0' : 'rotate-90'} ${data?.subMenu?.length > 0 ? 'block': 'hidden'} h-6 transition-all duration-500 ease-in-out`} />
+                                    </div>
+                                }
+                                <div className={` ${!subMenu[index] ? "sr-only" : "text-base duration-800 space-y-2 ease-in-out transition flex flex-col"} px-4`}>
+                                    {data.subMenu?.map((sub) => (
+                                        <Link 
+                                            key={sub.id} 
+                                            href={{pathname: data?.link}} 
+                                            onClick={() => setIsOpen(false)}
+                                            className=' items-center flex justify-between text-white py-1 space-x-2 transition-all duration-500 ease-in-out'
+                                        >
+                                            <span>{sub.name}</span>
+                                        </Link>
+                                    ))}
+                                </div>
+                            </React.Fragment>
                         ))}
                     </div>
                 </div>

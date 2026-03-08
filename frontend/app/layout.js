@@ -19,7 +19,7 @@ const fontInter = Inter({
 });
 
 export const metadata = {
-	title: "ITSJ-G Test Website",
+	title: "SCS Test Website",
 	description: "Website Testing",
 };
 
