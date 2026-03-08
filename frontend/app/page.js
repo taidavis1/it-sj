@@ -214,7 +214,7 @@ export default function HomePage() {
 								Precision PCB manufacturing and electronics services in San Jose supporting Silicon Valley innovation:
 							</h3>
 							<div className=" mt-8 lg:mt-16">
-								<Image src={WhyIcon3} alt="SCS Why Choose Us Icon" className=" -translate-x-4 lg:-translate-x-8 lg:w-32 lg:h-288" />
+								<Image src={WhyIcon3} alt="SCS Why Choose Us Icon" className=" -translate-x-4 lg:-translate-x-8 lg:w-32 lg:h-28" />
 								<div className="">
 									<h3 className=" border-b py-4 text-xl lg:text-2xl font-headerFont font-bold text-main uppercase">
 										Fast Turnaround
@@ -279,7 +279,7 @@ export default function HomePage() {
 									PCB Manufacturing
 								</span>
 								<span className=" text-clip text-transparent bg-linear-to-r to-[#007ec7] from-[#000d68] bg-clip-text">
-									 FAQs
+									FAQs
 								</span>
 							</div>
 							<div className=" -translate-y-4 text-center lg:text-lg lg:w-3/4">
@@ -329,7 +329,7 @@ export default function HomePage() {
 									</div>
 								))}
 							</div>
-							<div className='lg:p-8 lg:h-full h-100 p-2 lg:p-4 relative'>
+							<div className='lg:p-8 lg:h-full h-100 p-2 relative'>
 								<Image src={faqImage} alt='Frequently Asked Questions Image' className=' h-full object-cover rounded-xl' />
 							</div>
 						</div>

@@ -128,7 +128,7 @@ export const Navbar = () => {
                                 <div className={` ${!subMenu[index] ? "sr-only" : "text-base duration-800 space-y-2 ease-in-out transition flex flex-col"} px-4`}>
                                     {data.subMenu?.map((sub) => (
                                         <Link 
-                                            key={sub.id} 
+                                            key={sub?.name} 
                                             href={{pathname: data?.link}} 
                                             onClick={() => setIsOpen(false)}
                                             className=' items-center flex justify-between text-white py-1 space-x-2 transition-all duration-500 ease-in-out'
