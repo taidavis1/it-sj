@@ -23,7 +23,7 @@ const Footer = () => {
                                 Advanced PCB Manufacturing Experts
                             </h1>
                             <p className=" mt-4 text-sm">
-                                Delivering reliable PCB fabrication, PCB assembly, and electronics manufacturing services in San Jose, supporting Silicon Valley engineers from prototype to production.
+                                Delivering reliable PCB design, fabrication, and assembly in San Jose, supporting Silicon Valley engineers from prototype to scalable production.                            
                             </p>
                             <div className=' mt-8'>
                                 <Link className=' hover:opacity-50 flex items-center space-x-1' href={"tel:4087057113"} target='__blank'>

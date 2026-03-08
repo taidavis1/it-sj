@@ -30,14 +30,14 @@ const SwiperData = ({data, name}) => {
 	};
 
     const PrevArrow = () => (
-        <div onClick={() => swiperRef.current?.slidePrev()} className={`custom-swiper-button-prev transition duration-300 ease-in-out absolute top-1/3 -left-4 lg:left-0 z-10 rounded-full p-4 cursor-pointer`}>
-            <MdKeyboardArrowLeft className={`lg:w-12 lg:h-12 w-8 h-8 text-white`} />
+        <div onClick={() => swiperRef.current?.slidePrev()} className={`custom-swiper-button-prev transition duration-300 ease-in-out absolute bg-main/60 backdrop-blur-lg top-1/3 left-2 lg:left-4 z-10 rounded-full cursor-pointer`}>
+            <MdKeyboardArrowLeft className={`lg:w-12 lg:h-12 p-1 w-10 h-10 text-white`} />
         </div>
     );
 
     const NextArrow = () => (
-        <div onClick={() => swiperRef.current?.slideNext()} className={`custom-swiper-button-next transition duration-300 ease-in-out absolute top-1/3 -right-4 lg:right-0 z-10 rounded-full p-4 cursor-pointer`}>
-            <MdKeyboardArrowRight className={`lg:w-12 lg:h-12 w-8 h-8 text-white`} />
+        <div onClick={() => swiperRef.current?.slideNext()} className={`custom-swiper-button-next transition duration-300 ease-in-out absolute top-1/3 right-2 lg:right-4 bg-main/60 backdrop-blur-lg z-10 rounded-full cursor-pointer`}>
+            <MdKeyboardArrowRight className={`lg:w-12 lg:h-12 p-1 w-10 h-10 text-white`} />
         </div>
     );
 
@@ -55,7 +55,7 @@ const SwiperData = ({data, name}) => {
                     slidesPerView: 3,
                 }
             }}
-            speed={5000}
+            speed={3000}
             modules={[FreeMode, Navigation]}
             className=''
         >

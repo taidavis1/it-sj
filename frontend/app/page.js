@@ -55,10 +55,10 @@ export default function HomePage() {
 							</h1>
 							<div className=" text-sm lg:text-base space-y-4">
 								<p className="">
-									Based in San Jose, California, SCS specializes in precision PCB manufacturing, PCB fabrication, and PCB assembly services for companies across Silicon Valley and the Bay Area. We support hardware startups, engineering teams, and technology companies with reliable printed circuit board solutions, from rapid PCB prototyping to full production manufacturing. Our focus on quality, efficiency, and consistent performance allows us to help customers move their electronic products from concept to market with confidence.
+									Based in San Jose, California, SCS specializes in PCB design, precision PCB manufacturing, PCB fabrication, and PCB assembly services for companies across Silicon Valley and the Bay Area. We support hardware startups, engineering teams, and technology companies with reliable printed circuit board solutions, from rapid PCB prototyping to scalable mass production. In addition to local engineering support, we also help customers coordinate manufacturing in trusted overseas and low-cost production regions when projects require higher-volume manufacturing.
 								</p>
 								<p className="">
-									With experience supporting industries such as aerospace, medical devices, robotics, semiconductor, and EV technology, our team understands the demanding standards required for modern electronics. By combining advanced manufacturing processes, strict quality control, and responsive customer support, SCS delivers high-precision PCB fabrication and assembly in San Jose that engineers and innovators can depend on. Whether you need fast-turn prototypes or scalable production, we are committed to providing reliable PCB solutions that power the next generation of technology.
+									Our team supports demanding industries including aerospace, medical devices, robotics, semiconductor equipment, and EV technology. With advanced manufacturing processes, strict quality control, and responsive customer support, SCS delivers high-precision PCB design, fabrication, and assembly that engineers can depend on. Whether you need fast-turn prototypes or large-scale production, we provide reliable PCB solutions designed to support innovation across Silicon Valley and beyond.
 								</p>
 							</div>
 						</div>
@@ -151,7 +151,7 @@ export default function HomePage() {
 						</div>
 						<div className=" -translate-y-4 text-center lg:text-lg lg:w-3/4">
 							<p className="">
-								From rapid PCB prototyping to full production, we provide PCB fabrication, PCB assembly, electronics testing, and embedded software development services in San Jose, California. Supporting Silicon Valley startups and Bay Area technology companies, our team delivers reliable solutions that help engineers turn electronic designs into high-performance products.
+								From PCB design and rapid prototyping to full production, we provide PCB fabrication, PCB assembly, electronics testing, and embedded software development services in San Jose, California. Supporting Silicon Valley startups and Bay Area technology companies, our team delivers reliable solutions that help engineers turn electronic designs into high-performance products while also supporting scalable manufacturing and overseas production when needed.
 							</p>
 						</div>
 					</div>
