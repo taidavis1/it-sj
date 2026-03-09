@@ -24,38 +24,21 @@ import 'swiper/css';
 import 'swiper/css/bundle';
 
 import Link from 'next/link';
-import { GrFormNext } from 'react-icons/gr';
 import { AnimateBtn } from './AnimateBtn';
 
-export const Carousel = () => {
+import {useSelector } from 'react-redux';
 
-    const carouselData = [
-        {
-            id: 1,
-            title: "Engineering-Driven PCB Manufacturing in San Jose",
-            img: Carousel1,
-            desc: "High-precision PCB fabrication and assembly services for Silicon Valley startups, aerospace, medical, and robotics companies. Fast turnaround, IPC-compliant production, and scalable solutions from prototype to full production."
-        },
-        {
-            id: 2,
-            title: "Where Silicon Valley Prototypes Become Production-Ready",
-            img: Carousel2,
-            desc: "Rapid PCB prototyping and low-volume production in San Jose with reliable lead times, precision quality control, and turnkey component sourcing to accelerate product development cycles."
-        },
-        {
-            id: 3,
-            title: "Precision PCB Assembly for Mission-Critical Applications",
-            img: Carousel3,
-            desc: "Complete PCB assembly solutions including SMT, through-hole, inspection, and testing. Serving aerospace, medical, semiconductor, and EV industries across San Jose and the Bay Area."
-        },
-    ];
+import LangSwitchData from './langSwitch';
+export const Carousel = () => {
 
     const industryData = [
         Icon1,
         Icon2,
         Icon3,
         Icon4
-    ]
+    ];
+
+    const activeLang = useSelector((state) => state.activeLang.value);
 
     return (
         
@@ -76,7 +59,7 @@ export const Carousel = () => {
                 
                 className="w-full h-full"
             >
-                {carouselData.map((item) => (
+                {LangSwitchData[activeLang]?.carouselData.map((item) => (
                     <SwiperSlide className=' relative' key={item.id}>
                         {({ isActive }) => (
                             <div className="w-full h-full">
@@ -96,9 +79,9 @@ export const Carousel = () => {
                                             </p>
                                         </motion.div>
                                         <div className='mt-16 flex items-center space-x-8'>
-                                            <AnimateBtn hrefLink={""} text={"Request Quote"} />
+                                            <AnimateBtn hrefLink={""} text={activeLang === "en"? "Request Quote" : "見積もりを依頼"} />
                                             <Link href={""} className=' py-4 text-white text-lg text-center w-[120px] border-white border-b'>
-                                                Learn More
+                                                {activeLang === "en"? "Learn More" : "詳細を見る"}
                                             </Link>
                                         </div>
                                     </div>

@@ -23,6 +23,8 @@ export const Navbar = () => {
 
     const activeTab = useSelector((state) => state.activeTab.value);
 
+    const activeLang = useSelector((state) => state.activeLang.value);
+
     const dispatch = useDispatch();
 
     const pathNames = usePathname();
@@ -43,18 +45,18 @@ export const Navbar = () => {
 	};
 
     const NavData = [
-        {tabName: "Home", link: "/"},
-        {tabName: "Services", subMenu: [
-            {name: "PCB Design"},
-            {name: "PCB Fabrication"},
-            {name: "PCB Assembly"},
-            {name: "PCB Prototyping"},
-            {name: "Turnkey PCB Services"},
-            {name: "SMT Assembly"},
-            {name: "Cable Assembly"},
+        {tabName: "Home", link: "/", tabName2: "ホーム"},
+        {tabName: "Services", tabName2: "サービス", subMenu: [
+            {name: "PCB Design", name2: "PCB設計"},
+            {name: "PCB Fabrication", name2: "PCB製造"},
+            {name: "PCB Assembly", name2: "PCB組立"},
+            {name: "PCB Prototyping", name2: "PCB試作"},
+            {name: "Turnkey PCB Services", name2: "ターンキーPCBサービス"},
+            {name: "SMT Assembly", name2: "SMT実装"},
+            {name: "Cable Assembly", name2: "ケーブルアセンブリ"},
         ]},
-        {tabName: "Contact"},
-        {tabName: "Resources"}
+        {tabName: "Contact", tabName2: "お問い合わせ"},
+        {tabName: "Resources", tabName2: "リソース"}
     ];
 
     return (
@@ -73,7 +75,7 @@ export const Navbar = () => {
                                 item?.subMenu ?
                                     <div className='relative' key={index} onMouseEnter={() => handleHover(index)} onMouseLeave={() => handleHover(index)}>
                                         <Link href={""} className={`uppercase ${isActive(item?.link)} group flex items-center space-x-4`}>
-                                            {item?.tabName}
+                                            {activeLang === "en" ? item?.tabName : item?.tabName2}
                                             <GrFormNext className=' group-hover:rotwate-90 text-lg transition-all duration-500 ease-in-out' />
                                         </Link>
                                         {
@@ -81,7 +83,7 @@ export const Navbar = () => {
                                                 {
                                                     item.subMenu?.map((sub) => (
                                                         <Link key={sub?.name} href={""} className=' text-white py-4 px-2 mt-2 border-l group border-l-transparent hover:border-l-white transition-all duration-500 ease-in-out'>
-                                                            <span className=' group-hover:opacity-50'>{sub.name}</span>
+                                                            <span className=' group-hover:opacity-50'>{activeLang === "en" ? sub.name : sub.name2}</span>
                                                         </Link>
                                                     )
                                                 )}
@@ -90,13 +92,13 @@ export const Navbar = () => {
                                     </div>
                                     :
                                     <Link className={`uppercase py-4 ${isActive(item?.link)}`} key={index} href={""}>
-                                        {item?.tabName}
+                                        {activeLang === "en" ? item?.tabName : item?.tabName2}
                                     </Link>
                             ))}
                         </div>
                     </div>
                     <div className=" hidden lg:flex justify-end mx-16">
-                        <AnimateBtn hrefLink={""} text="Request A Quote" />
+                        <AnimateBtn name={activeLang === "en"? null : "jpn"} hrefLink={""} text={activeLang === "en"? "Request A Quote" : "見積もりを依頼"} />
                     </div>
                 </div>
             </nav>

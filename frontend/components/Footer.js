@@ -1,16 +1,21 @@
+"use client";
+
 import React from 'react';
-import ServicesData from './ServicesData';
 import Link from 'next/link';
 import { GrFormNext} from 'react-icons/gr';
-import {IoPhonePortraitOutline, IoLocationOutline, IoMailOutline} from "react-icons/io5";
+import { useSelector } from 'react-redux';
+import {IoPhonePortraitOutline, IoMailOutline} from "react-icons/io5";
+import langSwitchData from './langSwitch';
 
 const Footer = () => {
 
+    const activeLang = useSelector((state) => state.activeLang.value);
+
     const NavData = [
-        {tabName: "Home", link: "/"},
-        {tabName: "Services"},
-        {tabName: "Contact"},
-        {tabName: "Resources"}
+        {tabName: "Home", link: "/", tabName2: "ホーム"},
+        {tabName: "Services", link: "/#services", tabName2: "サービス"},
+        {tabName: "Contact", link: "/#contact", tabName2: "お問い合わせ"},
+        {tabName: "Resources", link: "/#resources", tabName2: "リソース"},
     ];
 
     return (
@@ -20,10 +25,14 @@ const Footer = () => {
                     <div className='grid lg:px-14 px-8 items-center pt-12 lg:grid-cols-2 gap-12'>
                         <div className="">
                             <h1 className=" text-white font-bold font-headerFont text-xl lg:text-2xl">
-                                Advanced PCB Manufacturing Experts
+                               {activeLang === "en"? " Advanced PCB Manufacturing Experts" : "高度なPCB製造の専門チーム"}
                             </h1>
                             <p className=" mt-4 text-sm">
-                                Delivering reliable PCB design, fabrication, and assembly in San Jose, supporting Silicon Valley engineers from prototype to scalable production.                            
+                                {activeLang === "en" ? 
+                                    "Delivering reliable PCB design, fabrication, and assembly in San Jose, supporting Silicon Valley engineers from prototype to scalable production." 
+                                    :
+                                    "サンノゼを拠点にPCB設計、PCB製造、PCB組立サービスを提供し、シリコンバレーのエンジニアが試作からスケーラブルな量産まで進められるようサポートしています。"
+                                }                            
                             </p>
                             <div className=' mt-8'>
                                 <Link className=' hover:opacity-50 flex items-center space-x-1' href={"tel:4087057113"} target='__blank'>
@@ -80,9 +89,9 @@ const Footer = () => {
                     <div className=''>
                         {NavData.map((item, index) => (
                             <div key={index} className='text-white group lg:text-base mb-5'>
-                                <Link href={item.link || ""} className='flex items-center gap-x-[1px]'>
+                                <Link href={item?.link || ""} className='flex items-center gap-x-[1px]'>
                                     <span className=' group-hover:opacity-50 lg:text-base text-sm transition-all duration-300'>
-                                        {item?.tabName}    
+                                        {activeLang === "en" ? item?.tabName: item?.tabName2}    
                                     </span> 
                                     <GrFormNext className='group-hover:translate-x-1 -translate-x-1 transition-all duration-300 opacity-0 group-hover:opacity-100' />
                                 </Link>
@@ -90,7 +99,7 @@ const Footer = () => {
                         ))}
                     </div>
                     <div className=''>
-                        {ServicesData.map((item, index) => (
+                        {langSwitchData[activeLang]?.ServicesData.map((item, index) => (
                             <div key={index} className='text-white group lg:text-base mb-5'>
                                 <Link href={""} className='flex items-center gap-x-[1px]'>
                                     <span className='lg:text-base text-sm group-hover:opacity-50 transition-all duration-300'>
@@ -105,7 +114,15 @@ const Footer = () => {
                         <div className='text-white group lg:text-base mb-5'>
                             <Link href={""} className='flex items-center gap-x-[1px]'>
                                 <span className=' text-sm group-hover:opacity-50 transition-all duration-300'>
-                                    Career  
+                                    {activeLang === "en" ? "Career": "採用"}  
+                                </span> 
+                                <GrFormNext className='group-hover:translate-x-1 -translate-x-1 transition-all duration-300 opacity-0 group-hover:opacity-100' />
+                            </Link>
+                        </div>
+                        <div className='text-white group lg:text-base mb-5'>
+                            <Link href={"/sitemap.xml"} className='flex items-center gap-x-[1px]'>
+                                <span className=' text-sm group-hover:opacity-50 transition-all duration-300'>
+                                    {activeLang === "en" ? "Site Map": "サイトマップ"}  
                                 </span> 
                                 <GrFormNext className='group-hover:translate-x-1 -translate-x-1 transition-all duration-300 opacity-0 group-hover:opacity-100' />
                             </Link>
@@ -113,15 +130,7 @@ const Footer = () => {
                         <div className='text-white group lg:text-base mb-5'>
                             <Link href={""} className='flex items-center gap-x-[1px]'>
                                 <span className=' text-sm group-hover:opacity-50 transition-all duration-300'>
-                                    Site Map  
-                                </span> 
-                                <GrFormNext className='group-hover:translate-x-1 -translate-x-1 transition-all duration-300 opacity-0 group-hover:opacity-100' />
-                            </Link>
-                        </div>
-                        <div className='text-white group lg:text-base mb-5'>
-                            <Link href={""} className='flex items-center gap-x-[1px]'>
-                                <span className=' text-sm group-hover:opacity-50 transition-all duration-300'>
-                                    Follow Us
+                                    {activeLang === "en"? "Follow Us": "フォローする"}
                                 </span> 
                                 <GrFormNext className='group-hover:translate-x-1 -translate-x-1 transition-all duration-300 opacity-0 group-hover:opacity-100' />
                             </Link>
@@ -136,11 +145,13 @@ const Footer = () => {
                             © {new Date().getFullYear()}
                         </span>
                         <Link className='hover:underline font-bold ' href='/'>SSC </Link>
-                        <span>All rights reserved.</span>
+                        <span>
+                            {activeLang === "en"? "All rights reserved": "全著作権所有"}
+                        </span>
                     </div>
                     <div className='lg:text-base lg:order-2 order-1 text-sm lg:justify-start justify-center inline-flex lg:items-start text-white space-x-4'>
                         <span>
-                            CEO & President: Mr. Chau Tran
+                            {activeLang === "en"? "CEO & President: Mr. Chau Tran": "代表取締役社長: Mr. Chau Tran"}
                         </span>
                     </div>
                 </div>
