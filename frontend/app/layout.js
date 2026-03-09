@@ -5,7 +5,6 @@ import { StoreProvider } from "@/redux/StoreProvider";
 import Footer from "@/components/Footer";
 
 
-
 const fontSora = Sora({
 	subsets: ["latin"],
 	weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
@@ -19,9 +18,9 @@ const fontInter = Inter({
 });
 
 export const metadata = {
-	title: "PCB Design, PCB Manufacturing & Assembly in San Jose | SCS",
+	title: "PCB Design, PCB Manufacturing & Assembly in San Jose | SSC",
 	category: "Electronics Manufacturing Services",
-	description: "SCS provides PCB design, PCB fabrication, PCB assembly, and PCB prototyping services in San Jose, California. Supporting Silicon Valley startups and Bay Area technology companies from prototype development to scalable global PCB production.",
+	description: "SSC provides PCB design, PCB fabrication, PCB assembly, and PCB prototyping services in San Jose, California. Supporting Silicon Valley startups and Bay Area technology companies from prototype development to scalable global PCB production.",
 	keywords:  [
 		"PCB design San Jose",
 		"PCB manufacturing San Jose",
@@ -74,30 +73,30 @@ export const metadata = {
 	formatDetection: { telephone: true, email: true, address: true },
 
 	openGraph: {
-		title: "SCS | PCB Design & Manufacturing in San Jose",
+		title: "SSC | PCB Engineering Services & Manufacturing in San Jose",
 		description: "Precision PCB design, PCB fabrication, and PCB assembly services in San Jose supporting Silicon Valley startups and Bay Area technology companies.",
 		images: [
 			{
 				url: `${process.env.NEXT_PUBLIC_REAL_URL}/Carousel/1.png`,
 				width: 1200,
 				height: 630,
-				alt: "SCS PCB Design and Manufacturing Services in San Jose"
+				alt: "SSC PCB Design and Manufacturing Services in San Jose"
 			}
 		],
 		type: "website",
-		siteName: "SCS PCB Manufacturing",
+		siteName: "SSC PCB Engineering Services & Manufacturing",
 		locale: "en_US",
 		url: `${process.env.NEXT_PUBLIC_REAL_URL}`
 	},
 	
 	twitter: {
 		card: "summary_large_image",
-		title: "SCS | PCB Design & Manufacturing in San Jose",
-  		description: "PCB design, fabrication, and assembly services in San Jose supporting Silicon Valley engineers from prototype to production.",
+		title: "SSC | PCB Engineering Services & Manufacturing in San Jose",
+		description: "PCB design, fabrication, and assembly services in San Jose supporting Silicon Valley engineers from prototype to production.",
 		images: [
 			{
 				url: `${process.env.NEXT_PUBLIC_REAL_URL}/Carousel/1.png`,
-				alt: "SCS PCB Design and Manufacturing Services in San Jose"
+				alt: "SSC PCB Design and Manufacturing Services in San Jose"
 			}
 		]
 	},

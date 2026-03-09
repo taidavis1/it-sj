@@ -1,11 +1,11 @@
 const jsonLD = {
     "@context": "https://schema.org",
     "@type": ["Organization", "LocalBusiness", "ManufacturingBusiness"],
-    "@id": `${process.env.NEXT_PUBLIC_REAL_URL}#scs`,
-    "name": "SCS PCB Manufacturing",
+    "@id": `${process.env.NEXT_PUBLIC_REAL_URL}#ssc`,
+    "name": "SSC PCB Engineering Services & Manufacturing",
     "url": `${process.env.NEXT_PUBLIC_REAL_URL}`,
     "logo": `${process.env.NEXT_PUBLIC_REAL_URL}/logo.png`,
-    "description": "SCS provides PCB design, PCB fabrication, PCB assembly, and PCB prototyping services in San Jose supporting Silicon Valley startups and Bay Area technology companies from prototype to scalable production.",
+    "description": "SSC provides PCB design, PCB fabrication, PCB assembly, and PCB prototyping services in San Jose supporting Silicon Valley startups and Bay Area technology companies from prototype to scalable production.",
     "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+1-408-705-7113",
@@ -166,10 +166,10 @@ const jsonLD = {
 
             {
                 "@type": "Question",
-                "name": "What PCB services does SCS provide in San Jose?",
+                "name": "What PCB services does SSC provide in San Jose?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "SCS provides PCB design, PCB fabrication, PCB assembly, PCB prototyping, electronics testing, and embedded software development services in San Jose supporting Silicon Valley startups and technology companies."
+                    "text": "SSC provides PCB design, PCB fabrication, PCB assembly, PCB prototyping, electronics testing, and embedded software development services in San Jose supporting Silicon Valley startups and technology companies."
                 }
             },
 
@@ -178,7 +178,7 @@ const jsonLD = {
                 "name": "Do you offer PCB prototyping services in Silicon Valley?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes. SCS provides rapid PCB prototyping services in San Jose helping engineers quickly move from circuit design to working prototype boards."
+                    "text": "Yes. SSC provides rapid PCB prototyping services in San Jose helping engineers quickly move from circuit design to working prototype boards."
                 }
             },
 
@@ -187,7 +187,7 @@ const jsonLD = {
                 "name": "Do you support both low-volume and mass PCB production?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes. SCS supports low-volume prototype manufacturing as well as scalable mass PCB production for electronics companies."
+                    "text": "Yes. SSC supports low-volume prototype manufacturing as well as scalable mass PCB production for electronics companies."
                 }
             },
 
@@ -196,16 +196,16 @@ const jsonLD = {
                 "name": "Do you provide turnkey PCB manufacturing?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes. SCS offers turnkey PCB manufacturing including component sourcing, PCB fabrication, PCB assembly, inspection, and electronics testing."
+                    "text": "Yes. SSC offers turnkey PCB manufacturing including component sourcing, PCB fabrication, PCB assembly, inspection, and electronics testing."
                 }
             },
 
             {
                 "@type": "Question",
-                "name": "Can SCS support overseas PCB manufacturing?",
+                "name": "Can SSC support overseas PCB manufacturing?",
                     "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes. In addition to engineering support in San Jose, SCS can coordinate manufacturing in trusted overseas production regions when projects require large-scale production."
+                    "text": "Yes. In addition to engineering support in San Jose, SSC can coordinate manufacturing in trusted overseas production regions when projects require large-scale production."
                 }
             },
             {
@@ -221,7 +221,7 @@ const jsonLD = {
                 "name": "What is the turnaround time for PCB prototyping?",
                     "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "The typical turnaround time for PCB prototyping at SCS is 1-3 business days for simple designs and 3-5 business days for more complex ones."
+                    "text": "The typical turnaround time for PCB prototyping at SSC is 1-3 business days for simple designs and 3-5 business days for more complex ones."
                 }
             },
             {

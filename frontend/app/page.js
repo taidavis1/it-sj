@@ -60,10 +60,10 @@ export default function HomePage() {
 							</h1>
 							<div className=" text-sm lg:text-base space-y-4">
 								<p className="">
-									Based in San Jose, California, SCS specializes in PCB design, precision PCB manufacturing, PCB fabrication, and PCB assembly services for companies across Silicon Valley and the Bay Area. We support hardware startups, engineering teams, and technology companies with reliable printed circuit board solutions, from rapid PCB prototyping to scalable mass production. In addition to local engineering support, we also help customers coordinate manufacturing in trusted overseas and low-cost production regions when projects require higher-volume manufacturing.
+									Based in San Jose, California, SSC specializes in PCB design, precision PCB manufacturing, PCB fabrication, and PCB assembly services for companies across Silicon Valley and the Bay Area. We support hardware startups, engineering teams, and technology companies with reliable printed circuit board solutions, from rapid PCB prototyping to scalable mass production. In addition to local engineering support, we also help customers coordinate manufacturing in trusted overseas and low-cost production regions when projects require higher-volume manufacturing.
 								</p>
 								<p className="">
-									Our team supports demanding industries including aerospace, medical devices, robotics, semiconductor equipment, and EV technology. With advanced manufacturing processes, strict quality control, and responsive customer support, SCS delivers high-precision PCB design, fabrication, and assembly that engineers can depend on. Whether you need fast-turn prototypes or large-scale production, we provide reliable PCB solutions designed to support innovation across Silicon Valley and beyond.
+									Our team supports demanding industries including aerospace, medical devices, robotics, semiconductor equipment, and EV technology. With advanced manufacturing processes, strict quality control, and responsive customer support, SSC delivers high-precision PCB design, fabrication, and assembly that engineers can depend on. Whether you need fast-turn prototypes or large-scale production, we provide reliable PCB solutions designed to support innovation across Silicon Valley and beyond.
 								</p>
 							</div>
 						</motion.div>
@@ -74,7 +74,7 @@ export default function HomePage() {
 							transition={{ duration: 0.8 }}
 						>
 							<div className=" overflow-hidden p-2 lg:p-6 rounded-2xl">
-								<Image src={Section1Img} alt="SCS About Us Section Image" className="w-full group-hover:scale-105 shadow-xl group-hover:opacity-55 cursor-pointer ease-in-out duration-500 rounded-2xl" />
+								<Image src={Section1Img} alt="SSC PCB Engineering Services & Manufacturing About Us Section Image" className="w-full group-hover:scale-105 shadow-xl group-hover:opacity-55 cursor-pointer ease-in-out duration-500 rounded-2xl" />
 							</div>
 						</motion.div>
 					</div>
@@ -85,7 +85,7 @@ export default function HomePage() {
 				<div className="pb-32 lg:pb-44 px-4 pt-14 lg:pt-28 lg:px-0 mx-auto max-w-7xl">
 					<div className=" space-y-10 flex flex-col items-center">
 						<div className="bg-linear-to-r flex items-center justify-center space-x-[4px] text-white text-center from-[#007ec7] to-[#000d68] py-4 shadow-xl rounded-full w-[160px]">
-							<Image src={IndustryIcon} className=" brightness-0 invert w-6 h-6" alt="SCS Industry Icon" />
+							<Image src={IndustryIcon} className=" brightness-0 invert w-6 h-6" alt="SSC PCB Engineering Services & Manufacturing Industry Icon" />
 							<span className=" text-base">
 								Industries
 							</span>
@@ -155,7 +155,7 @@ export default function HomePage() {
 				<div className="lg:pb-14 px-4 pt-14 lg:pt-14 lg:px-0 mx-auto max-w-7xl">
 					<div className=" space-y-12 flex flex-col items-center">
 						<div className="bg-linear-to-r flex items-center justify-center space-x-[4px] text-white text-center from-[#007ec7] to-[#000d68] py-4 shadow-xl rounded-full w-[168px]">
-							<Image src={IndustryIcon} className=" brightness-0 invert w-6 h-6" alt="SCS Industry Icon" />
+							<Image src={IndustryIcon} className=" brightness-0 invert w-6 h-6" alt="SSC PCB Engineering Services & Manufacturing Industry Icon" />
 							<span className=" text-base">
 								Our Services
 							</span>
@@ -208,7 +208,7 @@ export default function HomePage() {
 				<div className="pb-12 lg:pb-24 px-4 pt-14 lg:pt-28 lg:px-0 mx-auto max-w-7xl">
 					<div className=" flex justify-center">
 						<div className="bg-linear-to-r flex items-center justify-center space-x-[4px] text-white text-center from-[#007ec7] to-[#000d68] py-4 shadow-xl rounded-full w-[200px]">
-							<Image src={IndustryIcon} className=" brightness-0 invert w-6 h-6" alt="SCS Industry Icon" />
+							<Image src={IndustryIcon} className=" brightness-0 invert w-6 h-6" alt="SSC PCB Engineering Services & Manufacturing Industry Icon" />
 							<span className=" text-base">
 								Why Choose Us
 							</span>
@@ -218,7 +218,7 @@ export default function HomePage() {
 						<div className=" w-full flex flex-col">
 							<div className=" flex lg:flex-nowrap flex-wrap text-3xl space-x-2 font-bold  font-headerFont lg:text-5xl  items-center">
 								<span className="text-main">
-									The SCS
+									The SSC
 								</span>
 								<span className=" text-clip text-transparent bg-linear-to-r to-[#007ec7] from-[#000d68] bg-clip-text">
 									Difference.
@@ -230,7 +230,7 @@ export default function HomePage() {
 								</h3>
 							</div>
 							<div className=" mt-12 lg:mt-20">
-								<Image src={WhyIcon1} alt="SCS Why Choose Us Icon" className="-translate-x-4 lg:-translate-x-8 lg:w-32 lg:h-28" />
+								<Image src={WhyIcon1} alt="SSC Why Choose Us Icon" className="-translate-x-4 lg:-translate-x-8 lg:w-32 lg:h-28" />
 								<div className="">
 									<h3 className=" border-b py-4 text-xl lg:text-2xl font-headerFont font-bold text-main uppercase">
 										Precision Engineering
@@ -241,7 +241,7 @@ export default function HomePage() {
 								</p>
 							</div>
 							<div className=" mt-8 lg:mt-12">
-								<Image src={WhyIcon2} alt="SCS Why Choose Us Icon" className=" -translate-x-4 lg:-translate-x-8 lg:w-32 lg:h-28" />
+								<Image src={WhyIcon2} alt="SSC Why Choose Us Icon" className=" -translate-x-4 lg:-translate-x-8 lg:w-32 lg:h-28" />
 								<div className="">
 									<h3 className=" border-b py-4 text-xl lg:text-2xl font-headerFont font-bold text-main uppercase">
 										Reliable Manufacturing
@@ -257,7 +257,7 @@ export default function HomePage() {
 								Precision PCB manufacturing and electronics services in San Jose supporting Silicon Valley innovation:
 							</h3>
 							<div className=" mt-8 lg:mt-16">
-								<Image src={WhyIcon3} alt="SCS Why Choose Us Icon" className=" -translate-x-4 lg:-translate-x-8 lg:w-32 lg:h-28" />
+								<Image src={WhyIcon3} alt="SSC Why Choose Us Icon" className=" -translate-x-4 lg:-translate-x-8 lg:w-32 lg:h-28" />
 								<div className="">
 									<h3 className=" border-b py-4 text-xl lg:text-2xl font-headerFont font-bold text-main uppercase">
 										Fast Turnaround
@@ -268,7 +268,7 @@ export default function HomePage() {
 								</p>
 							</div>
 							<div className=" mt-12">
-								<Image src={WhyIcon4} alt="SCS Why Choose Us Icon" className=" -translate-x-4 lg:-translate-x-8 lg:w-32 lg:h-28" />
+								<Image src={WhyIcon4} alt="SSC Why Choose Us Icon" className=" -translate-x-4 lg:-translate-x-8 lg:w-32 lg:h-28" />
 								<div className="">
 									<h3 className=" border-b py-4 text-xl lg:text-2xl font-headerFont font-bold text-main uppercase">
 										Silicon Valley Expertise
@@ -306,13 +306,13 @@ export default function HomePage() {
 			</section>
 
 			<section id='resources' className="relative bg-white">
-				<Image alt='SCS Circuit Icon Image' src={CircuitL} className=' absolute w-54 lg:w-[400px] -top-8 translate-x-8 -left-20 lg:-left-24' />
+				<Image alt='SSC PCB Engineering Services & Manufacturing Circuit Icon Image' src={CircuitL} className=' absolute w-54 lg:w-[400px] -top-8 translate-x-8 -left-20 lg:-left-24' />
 
 				<div className='pb-12 lg:pb-24 px-4 pt-16 lg:pt-24 lg:px-0 mx-auto max-w-7xl'>
 					<div className=''>
 						<div className='lg:space-y-12 space-y-8 flex text-center flex-col items-center'>
 							<div className="bg-linear-to-r flex items-center justify-center space-x-[4px] text-white text-center from-[#007ec7] to-[#000d68] py-4 shadow-xl rounded-full w-[168px]">
-								<Image src={IndustryIcon} className=" brightness-0 invert w-6 h-6" alt="SCS Industry Icon" />
+								<Image src={IndustryIcon} className=" brightness-0 invert w-6 h-6" alt="SSC PCB Engineering Services & Manufacturing Industry Icon" />
 								<span className=" text-base">
 									Resources
 								</span>

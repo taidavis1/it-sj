@@ -133,7 +133,7 @@ export const Carousel = () => {
                 >
                 </path>
             </svg>
-            <Image alt='SCS Circuit Icon Image' src={CircuitL} className=' absolute w-64 lg:w-[400px] -translate-y-5 lg:translate-y-4 translate-x-8 -scale-x-100 lg:scale-x-100 -right-12 lg:-left-24' />
+            <Image alt='SSC PCB Engineering Services & Manufacturing Circuit Icon Image' src={CircuitL} className=' absolute w-64 lg:w-[400px] -translate-y-5 lg:translate-y-4 translate-x-8 -scale-x-100 lg:scale-x-100 -right-12 lg:-left-24' />
         </div>
     )
 }

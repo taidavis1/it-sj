@@ -60,7 +60,7 @@ export const Navbar = () => {
         <div className='fixed top-0 w-full z-60'>
             <nav className={``}>
                 <div className=' grid grid-cols-2 lg:grid-cols-3 items-center'>
-                    <Image className={`w-24 h-24 mx-4 lg:mx-16 my-4`} src={Logo} alt='It-sj group Logo' />
+                    <Image className={`w-44 h-32 brightness-105 mx-4 lg:mx-16 my-4`} src={Logo} alt='It-sj group Logo' />
                     <div className='lg:bg-main/60 flex lg:justify-center justify-end lg:mx-0 mx-4 lg:backdrop-blur-lg lg:rounded-full'>
                         <div className={`lg:hidden w-12 h-12 ${isOpen? 'opacity-0' : 'opacity-100'} bg-main/60 backdrop-blur-lg flex items-center justify-center rounded-full`}>
                             <div onClick={() => setIsOpen(!isOpen)} className={`${isOpen? 'pointer-events-none' : ''} cursor-pointer`}>

@@ -135,7 +135,7 @@ const Footer = () => {
                         <span>
                             © {new Date().getFullYear()}
                         </span>
-                        <Link className='hover:underline font-bold ' href='/'>SCS </Link>
+                        <Link className='hover:underline font-bold ' href='/'>SSC </Link>
                         <span>All rights reserved.</span>
                     </div>
                     <div className='lg:text-base lg:order-2 order-1 text-sm lg:justify-start justify-center inline-flex lg:items-start text-white space-x-4'>
