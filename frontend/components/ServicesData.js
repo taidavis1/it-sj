@@ -9,6 +9,11 @@ import ImgServices7 from "@/public/ImgServices/7.png";
 
 const ServicesData = [
     {
+        "name": "PCB Design",
+        "desc": "Professional PCB design services in San Jose creating optimized multilayer circuit board layouts with signal integrity, manufacturability, and performance in mind.",
+        "img": ImgServices7
+    },
+    {
         "name": "PCB Fabrication",
         "desc": "Precision PCB fabrication services in San Jose delivering high-quality printed circuit boards for Silicon Valley electronics, robotics, aerospace, and semiconductor applications.",
         "img": ImgServices1
@@ -22,11 +27,6 @@ const ServicesData = [
         "name": "PCB Prototyping",
         "desc": "Fast-turn PCB prototyping in San Jose helping Silicon Valley startups and engineering teams move quickly from electronic design to working prototype boards.",
         "img": ImgServices3
-    },
-    {
-        "name": "PCB Design",
-        "desc": "Professional PCB design services in San Jose creating optimized multilayer circuit board layouts with signal integrity, manufacturability, and performance in mind.",
-        "img": ImgServices7
     },
     {
         "name": "Turnkey PCB Manufacturing",

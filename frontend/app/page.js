@@ -155,8 +155,24 @@ export default function HomePage() {
 							</p>
 						</div>
 					</div>
-					<div className="lg:mt-14 mt-10">
-						<SwiperData data={ServicesData} />
+					<div className="lg:mt-8 mt-10">
+						<div className=" grid lg:p-8 lg:grid-cols-3 gap-8">
+							{ServicesData.map((item, index) => (
+								<div key={index} className={`shadow-lg lg:mb-6 hover:opacity-55 transition-all ease-in-out duration-500 rounded-2xl`}>
+									<div className="rounded-2xl cursor-pointer">
+										<Image src={item.img} alt={item?.name} className=" w-full h-full rounded-t-2xl object-cover" />
+										<div className=" space-y-4 px-4 py-6">
+											<h3 className=" text-main text-xl font-headerFont font-bold">
+												{item?.name}
+											</h3>
+											<p className=" text-base">
+												{item?.desc}
+											</p>
+										</div>
+									</div>
+								</div>
+							))}
+						</div>
 					</div>
 				</div>
 			</section>

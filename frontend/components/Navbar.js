@@ -45,10 +45,10 @@ export const Navbar = () => {
     const NavData = [
         {tabName: "Home", link: "/"},
         {tabName: "Services", subMenu: [
+            {name: "PCB Design"},
             {name: "PCB Fabrication"},
             {name: "PCB Assembly"},
             {name: "PCB Prototyping"},
-            {name: "PCB Design"},
             {name: "Turnkey PCB Services"},
             {name: "SMT Assembly"},
         ]},
