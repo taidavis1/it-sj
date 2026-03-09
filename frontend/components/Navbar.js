@@ -51,6 +51,7 @@ export const Navbar = () => {
             {name: "PCB Prototyping"},
             {name: "Turnkey PCB Services"},
             {name: "SMT Assembly"},
+            {name: "Cable Assembly"},
         ]},
         {tabName: "Contact"},
         {tabName: "Resources"}
@@ -73,7 +74,7 @@ export const Navbar = () => {
                                     <div className='relative' key={index} onMouseEnter={() => handleHover(index)} onMouseLeave={() => handleHover(index)}>
                                         <Link href={""} className={`uppercase ${isActive(item?.link)} group flex items-center space-x-4`}>
                                             {item?.tabName}
-                                            <GrFormNext className=' group-hover:rotate-90 text-lg transition-all duration-500 ease-in-out' />
+                                            <GrFormNext className=' group-hover:rotwate-90 text-lg transition-all duration-500 ease-in-out' />
                                         </Link>
                                         {
                                             <div className={`bg-main/80 border-t rounded-t-2xl backdrop-blur-2xl py-2 transition-all duration-500 ease-in-out w-[250px] ${subMenu[index] ? "translate-y-0 opacity-100" : "opacity-0 sr-only translate-y-4"} px-1 absolute flex flex-col top-6 -translate-x-2`}>

@@ -3,6 +3,7 @@ import storage from "redux-persist/es/storage";
 import { persistReducer, persistStore } from "redux-persist";
 import { combineReducers } from "redux";
 import ActiveTabReducer from "./ActiveTabSlice";
+import ActiveLangReducer from "./ActiveLangSlice";
 
 const persistConfig = {
     key: "root",
@@ -12,6 +13,7 @@ const persistConfig = {
 
 const rootReducer = combineReducers({
     activeTab: ActiveTabReducer,
+    activeLang: ActiveLangReducer,
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);

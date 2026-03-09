@@ -156,6 +156,11 @@ const jsonLD = {
                 "@type": "Service",
                 "name": "Embedded Software Development",
                 "description": "Embedded firmware and software development supporting integrated electronic hardware systems."
+            },
+            {
+                "@type": "Service",
+                "name": "Cable Assembly",
+                "description": "Professional cable assembly services supporting electronic systems including custom wire harnesses, connector integration, and reliable cable solutions for advanced electronics manufacturing."
             }
         ]
     },

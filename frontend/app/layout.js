@@ -3,7 +3,8 @@ import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { StoreProvider } from "@/redux/StoreProvider";
 import Footer from "@/components/Footer";
-
+import FloatBtn from "@/components/FloatBtn";
+import "/node_modules/flag-icons/css/flag-icons.min.css";
 
 const fontSora = Sora({
 	subsets: ["latin"],
@@ -27,11 +28,17 @@ export const metadata = {
 		"PCB fabrication San Jose",
 		"PCB assembly San Jose",
 		"PCB prototyping San Jose",
+		"Cable Assembly San Jose",
 		"PCB manufacturer Silicon Valley",
 		"PCB design Silicon Valley",
 		"PCB assembly Silicon Valley",
 		"PCB fabrication Silicon Valley",
+		"Cable assembly Silicon Valley",
 		"PCB manufacturing Bay Area",
+		"PCB design Bay Area",
+		"PCB assembly Bay Area",
+		"PCB fabrication Bay Area",
+		"Cable assembly Bay Area",
 		"printed circuit board manufacturer California",
 		"electronics manufacturing services San Jose",
 		"turnkey PCB manufacturing",
@@ -117,6 +124,7 @@ export default function RootLayout({ children }) {
 						<Navbar />
 						{children}
 						<Footer />
+						<FloatBtn />
 					</main>
 				</StoreProvider>
 			</body>

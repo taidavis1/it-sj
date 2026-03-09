@@ -5,6 +5,7 @@ import ImgServices4 from "@/public/ImgServices/4.png";
 import ImgServices5 from "@/public/ImgServices/5.png";
 import ImgServices6 from "@/public/ImgServices/6.png";
 import ImgServices7 from "@/public/ImgServices/7.png";
+import ImgServices8 from "@/public/ImgServices/7.png";
 
 
 const ServicesData = [
@@ -32,6 +33,11 @@ const ServicesData = [
         "name": "Turnkey PCB Manufacturing",
         "desc": "Complete turnkey PCB manufacturing services including component sourcing, fabrication, assembly, and testing for companies across San Jose and the Bay Area.",
         "img": ImgServices4
+    },
+    {
+        "name": "Cable Assembly",
+        "desc": "Professional cable assembly services in San Jose delivering custom wire harnesses and integrated cable solutions supporting Silicon Valley electronics and advanced hardware systems.",
+        "img": ImgServices8
     },
     {
         "name": "Electronics Testing & QC",
