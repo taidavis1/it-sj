@@ -241,3 +241,6 @@ const jsonLD = {
     },
     "sameAs": [],
 };
+
+
+export default jsonLD;

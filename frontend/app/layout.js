@@ -5,6 +5,10 @@ import { StoreProvider } from "@/redux/StoreProvider";
 import Footer from "@/components/Footer";
 import FloatBtn from "@/components/FloatBtn";
 
+import {GoogleAnalytics} from "@next/third-parties/google";
+
+import jsonLD from "@/components/JsonLD";
+
 const fontSora = Sora({
 	subsets: ["latin"],
 	weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
@@ -114,12 +118,20 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 	return (
-		<html lang="en">
+		<html className="scroll-smooth" lang="en">
+			<head>
+				<script
+					type="application/ld+json"
+					dangerouslySetInnerHTML={{
+						__html: JSON.stringify(jsonLD),
+					}}
+				/>
+			</head>
 			<body
 				className={`${fontSora.variable} ${fontInter.variable}`}
 			>
 				<StoreProvider>
-					<main className=" font-txtFont scroll-smooth overflow-hidden">
+					<main className=" font-txtFont overflow-hidden">
 						<Navbar />
 						{children}
 						<Footer />
@@ -127,6 +139,7 @@ export default function RootLayout({ children }) {
 					</main>
 				</StoreProvider>
 			</body>
+			<GoogleAnalytics gaId="G-PK33YWSLY1" />
 		</html>
 	);
 }

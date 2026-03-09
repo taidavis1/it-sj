@@ -54,9 +54,9 @@ export const Navbar = () => {
             {name: "Turnkey PCB Services", name2: "ターンキーPCBサービス"},
             {name: "SMT Assembly", name2: "SMT実装"},
             {name: "Cable Assembly", name2: "ケーブルアセンブリ"},
-        ]},
-        {tabName: "Contact", tabName2: "お問い合わせ"},
-        {tabName: "Resources", tabName2: "リソース"}
+        ], link: "/#services"},
+        {tabName: "Contact", tabName2: "お問い合わせ", link: "/#contact"},
+        {tabName: "Resources", tabName2: "リソース", link: "/#resources"},
     ];
 
     return (
@@ -74,7 +74,7 @@ export const Navbar = () => {
                             {NavData.map((item, index) => (
                                 item?.subMenu ?
                                     <div className='relative' key={index} onMouseEnter={() => handleHover(index)} onMouseLeave={() => handleHover(index)}>
-                                        <Link href={""} className={`uppercase ${isActive(item?.link)} group flex items-center space-x-4`}>
+                                        <Link href={item?.link} className={`uppercase ${isActive(item?.link)} group flex items-center space-x-4`}>
                                             {activeLang === "en" ? item?.tabName : item?.tabName2}
                                             <GrFormNext className=' group-hover:rotwate-90 text-lg transition-all duration-500 ease-in-out' />
                                         </Link>
@@ -82,7 +82,7 @@ export const Navbar = () => {
                                             <div className={`bg-main/80 border-t rounded-t-2xl backdrop-blur-2xl py-2 transition-all duration-500 ease-in-out w-[250px] ${subMenu[index] ? "translate-y-0 opacity-100" : "opacity-0 sr-only translate-y-4"} px-1 absolute flex flex-col top-6 -translate-x-2`}>
                                                 {
                                                     item.subMenu?.map((sub) => (
-                                                        <Link key={sub?.name} href={""} className=' text-white py-4 px-2 mt-2 border-l group border-l-transparent hover:border-l-white transition-all duration-500 ease-in-out'>
+                                                        <Link key={sub?.name} href={item?.link} className=' text-white py-4 px-2 mt-2 border-l group border-l-transparent hover:border-l-white transition-all duration-500 ease-in-out'>
                                                             <span className=' group-hover:opacity-50'>{activeLang === "en" ? sub.name : sub.name2}</span>
                                                         </Link>
                                                     )
@@ -91,7 +91,7 @@ export const Navbar = () => {
                                         }
                                     </div>
                                     :
-                                    <Link className={`uppercase py-4 ${isActive(item?.link)}`} key={index} href={""}>
+                                    <Link className={`uppercase py-4 ${isActive(item?.link)}`} key={index} href={item?.link}>
                                         {activeLang === "en" ? item?.tabName : item?.tabName2}
                                     </Link>
                             ))}
@@ -118,12 +118,12 @@ export const Navbar = () => {
                                             onClick={() => setIsOpen(false)}
                                             className="text-lg py-4 transition border-b px-6 duration-500 ease-in-out"
                                         >
-                                            {data?.tabName}
+                                            {activeLang === "en" ? data?.tabName : data?.tabName2}
                                         </Link>
                                     :
                                     <div key={index} className='text-lg py-4 transition border-b px-4 duration-500 ease-in-out flex items-center justify-between'>
                                         <span className="">
-                                            {data?.tabName}
+                                            {activeLang === "en" ? data?.tabName : data?.tabName2}
                                         </span>
                                         <GrFormNext onClick={() => handleHover(index)} className={ `w-6 ${subMenu[index] ? 'rotate-0' : 'rotate-90'} ${data?.subMenu?.length > 0 ? 'block': 'hidden'} h-6 transition-all duration-500 ease-in-out`} />
                                     </div>
@@ -132,11 +132,13 @@ export const Navbar = () => {
                                     {data.subMenu?.map((sub) => (
                                         <Link 
                                             key={sub?.name} 
-                                            href={{pathname: data?.link}} 
+                                            href={data?.link} 
                                             onClick={() => setIsOpen(false)}
                                             className=' items-center flex justify-between text-white py-1 space-x-2 transition-all duration-500 ease-in-out'
                                         >
-                                            <span>{sub.name}</span>
+                                            <span>
+                                                {activeLang === "en" ? sub.name : sub.name2}
+                                            </span>
                                         </Link>
                                     ))}
                                 </div>

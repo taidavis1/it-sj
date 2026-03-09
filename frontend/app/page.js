@@ -6,8 +6,6 @@ import React from 'react'
 
 import Section1Img from "@/public/Section1.png";
 import IndustryIcon from "@/public/Icon/IndustryIcon.svg";
-import IndustryList from "@/components/IndustryList";
-import ServicesData from "@/components/ServicesData";
 // import SwiperData from "@/components/SwiperData";
 
 import { motion, AnimatePresence } from "motion/react";
@@ -17,7 +15,6 @@ import WhyIcon2 from "@/public/Icon/WhyIcon/2.png";
 import WhyIcon3 from "@/public/Icon/WhyIcon/3.png";
 import WhyIcon4 from "@/public/Icon/WhyIcon/4.png";
 
-import faqData from "@/components/FaqData";
 import CircuitL from "@/public/Icon/alt/circuitL.png";
 
 import faqImage from "@/public/faqPic.png";
@@ -155,6 +152,7 @@ export default function HomePage() {
 			</section>
 
 			<motion.section 
+				id = "services"
 				className=" -translate-y-14 lg:-translate-y-8 bg-[url('/servicesBG.png')] bg-cover bg-center bg-no-repeat"
 				initial={{ opacity: 0, y: 50 }}
 				whileInView={{ opacity: 1, y: 0 }}
