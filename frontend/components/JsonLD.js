@@ -4,7 +4,7 @@ const jsonLD = {
     "@id": `${process.env.NEXT_PUBLIC_REAL_URL}#ssc`,
     "name": "SSC PCB Engineering Services & Manufacturing",
     "url": `${process.env.NEXT_PUBLIC_REAL_URL}`,
-    "logo": `${process.env.NEXT_PUBLIC_REAL_URL}/logo.png`,
+    "logo": `${process.env.NEXT_PUBLIC_REAL_URL}/Logo.png`,
     "description": "SSC provides PCB design, PCB fabrication, PCB assembly, and PCB prototyping services in San Jose supporting Silicon Valley startups and Bay Area technology companies from prototype to scalable production.",
     "contactPoint": {
         "@type": "ContactPoint",
