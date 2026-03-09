@@ -4,7 +4,7 @@ import { Navbar } from "@/components/Navbar";
 import { StoreProvider } from "@/redux/StoreProvider";
 import Footer from "@/components/Footer";
 import FloatBtn from "@/components/FloatBtn";
-import "/node_modules/flag-icons/css/flag-icons.min.css";
+import "flag-icons/css/flag-icons.min.css";
 
 const fontSora = Sora({
 	subsets: ["latin"],
