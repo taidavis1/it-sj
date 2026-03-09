@@ -8,7 +8,7 @@ import Section1Img from "@/public/Section1.png";
 import IndustryIcon from "@/public/Icon/IndustryIcon.svg";
 import IndustryList from "@/components/IndustryList";
 import ServicesData from "@/components/ServicesData";
-import SwiperData from "@/components/SwiperData";
+// import SwiperData from "@/components/SwiperData";
 
 import { motion, AnimatePresence } from "motion/react";
 
@@ -49,7 +49,12 @@ export default function HomePage() {
 			<section className="bg-white">
 				<div className="pb-8 lg:pb-12 px-4 pt-24 lg:pt-48 lg:px-0 mx-auto max-w-7xl">
 					<div className=" lg:grid-cols-2 grid gap-8 lg:gap-12 items-center">
-						<div className=" space-y-4 lg:space-y-8">
+						<motion.div 
+							initial={{ opacity: 0, x: -100 }}
+							whileInView={{ opacity: 1, x: 0 }}
+							transition={{ duration: 0.8 }}
+							className=" space-y-4 lg:space-y-8"
+						>
 							<h1 className=" lg:text-4xl text-2xl text-main font-bold font-headerFont">
 								Engineering Behind the Boards
 							</h1>
@@ -61,12 +66,17 @@ export default function HomePage() {
 									Our team supports demanding industries including aerospace, medical devices, robotics, semiconductor equipment, and EV technology. With advanced manufacturing processes, strict quality control, and responsive customer support, SCS delivers high-precision PCB design, fabrication, and assembly that engineers can depend on. Whether you need fast-turn prototypes or large-scale production, we provide reliable PCB solutions designed to support innovation across Silicon Valley and beyond.
 								</p>
 							</div>
-						</div>
-						<div className=" group">
+						</motion.div>
+						<motion.div
+							initial={{ opacity: 0, x: 100 }}
+							whileInView={{ opacity: 1, x: 0 }}
+							viewport={{ amount: 0.3 }}
+							transition={{ duration: 0.8 }}
+						>
 							<div className=" overflow-hidden p-2 lg:p-6 rounded-2xl">
 								<Image src={Section1Img} alt="SCS About Us Section Image" className="w-full group-hover:scale-105 shadow-xl group-hover:opacity-55 cursor-pointer ease-in-out duration-500 rounded-2xl" />
 							</div>
-						</div>
+						</motion.div>
 					</div>
 				</div>
 			</section>
@@ -99,7 +109,14 @@ export default function HomePage() {
 					</div>
 					<div className=" grid lg:grid-cols-2 gap-12 mt-12 lg:mt-14">
 						{IndustryList.map((item, index) => (
-							<div key={index} className=" h-fit hover:scale-105 hover:opacity-55 transition-all ease-in-out duration-500 shadow-xl rounded-2xl">
+							<motion.div 
+								key={index} 
+								className=" h-fit shadow-xl rounded-2xl"
+								initial={{ opacity: 0, x: index % 2 === 0 ? 100 : -100 }}
+								whileHover={{ scale: 1.05, opacity: 0.5}}
+								whileInView={{ opacity: 1, x: 0 }}
+								transition={{ duration: 0.8,}}
+							>
 								<div className="rounded-2xl cursor-pointer lg:flex-row flex-col flex space-x-4">
 									<Image src={item.icon} alt={item?.name} className=" lg:w-44 lg:h-44 rounded-l-2xl rounded-tr-2xl" />
 									<div className=" space-y-4 px-4 lg:py-0 py-4 lg:mt-3">
@@ -111,7 +128,7 @@ export default function HomePage() {
 										</p>
 									</div>
 								</div>
-							</div>
+							</motion.div>
 						))}
 					</div>
 				</div>
@@ -129,7 +146,12 @@ export default function HomePage() {
 				</svg>
 			</section>
 
-			<section className=" -translate-y-14 lg:-translate-y-8 bg-[url('/servicesBG.png')] bg-cover bg-center bg-no-repeat">
+			<motion.section 
+				className=" -translate-y-14 lg:-translate-y-8 bg-[url('/servicesBG.png')] bg-cover bg-center bg-no-repeat"
+				initial={{ opacity: 0, y: 50 }}
+				whileInView={{ opacity: 1, y: 0 }}
+				transition={{ duration: 0.8, type: "tween" }}
+			>
 				<div className="lg:pb-14 px-4 pt-14 lg:pt-14 lg:px-0 mx-auto max-w-7xl">
 					<div className=" space-y-12 flex flex-col items-center">
 						<div className="bg-linear-to-r flex items-center justify-center space-x-[4px] text-white text-center from-[#007ec7] to-[#000d68] py-4 shadow-xl rounded-full w-[168px]">
@@ -175,9 +197,14 @@ export default function HomePage() {
 						</div>
 					</div>
 				</div>
-			</section>
+			</motion.section>
 
-			<section className="bg-lightGray">
+			<motion.section 
+				className="bg-lightGray"
+				initial={{ opacity: 0}}
+				whileInView={{ opacity: 1}}
+				transition={{ duration: 0.8}}
+			>
 				<div className="pb-12 lg:pb-24 px-4 pt-14 lg:pt-28 lg:px-0 mx-auto max-w-7xl">
 					<div className=" flex justify-center">
 						<div className="bg-linear-to-r flex items-center justify-center space-x-[4px] text-white text-center from-[#007ec7] to-[#000d68] py-4 shadow-xl rounded-full w-[200px]">
@@ -254,7 +281,7 @@ export default function HomePage() {
 						</div>
 					</div>
 				</div>
-			</section>
+			</motion.section>
 
 			<section className="">
 				<div className="grid lg:grid-cols-2">
