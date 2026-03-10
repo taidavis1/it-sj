@@ -15,7 +15,7 @@ const FloatBtn = () => {
     };
 
     return (
-        <div className=' fixed bottom-4 lg:bottom-12 lg:right-10 right-4 z-50'>
+        <div className=' fixed bottom-4 lg:bottom-12 lg:right-10 right-4 flex items-center justify-center z-50'>
             <select onChange={LangSwitch} value={selectedValue} className="cursor-pointer text-base lg:text-lg appearance-none rounded-full bg-main/60 backdrop-blur-lg shadow-lg text-center focus:outline-none text-white lg:w-12 lg:h-12 w-10 h-10 relative">
                 <option value="en">EN</option>
                 <option value="jpn">JP</option>
